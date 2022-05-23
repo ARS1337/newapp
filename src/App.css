@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../public/Fonts/Poppins-Bold.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url("../public/Fonts/Poppins-ExtraBold.ttf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("../public/Fonts/Poppins-ExtraLight.ttf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../public/Fonts/Poppins-Light.ttf");
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../public/Fonts/Poppins-Medium.ttf");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../public/Fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../public/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Thin";
+  src: url("../public/Fonts/Poppins-Thin.ttf");
 }

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import data from "./config";
 
 function App() {
+  const poleDate = data.poleDate;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-full">
+      <div className="flex items-center justify-center ">
+        <Header poleDate={poleDate} />
+      </div>
+      <Footer/>
+
     </div>
   );
 }
