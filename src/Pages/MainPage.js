@@ -61,8 +61,8 @@ function MainPage(props) {
       </div>
       {/* description ends */}
       {/* table starts */}
-      <div className="bg-light-gray-custom flex flex-row items-start justify-center w-full px-4 md:px-24">
-        <div className="  flex flex-col items-start justify-center w-7/12">
+      <div className="bg-light-gray-custom flex flex-col lg:flex-row items-start justify-center w-full px-4 md:px-12 lg:px-24">
+        <div className="  flex flex-col items-start justify-center w-full lg:w-7/12">
           <MainTable data={data} />
           <HelpSection questionList={data.helpQuestionList} />
           <FaqSection />
@@ -77,7 +77,7 @@ function MainPage(props) {
           </div>
         </div>
         {/* right container */}
-        <div className="mt-28 font-Poppins-Medium ml-4  justify-center flex w-2/12 flex-col">
+        <div className="mt-28 font-Poppins-Medium ml-4  justify-center flex w-full lg:w-2/12 flex-col">
           {/* 1st ad */}
           <Ad1 />
           {/* 2nd ad */}

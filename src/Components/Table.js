@@ -2,9 +2,9 @@ import React from "react";
 
 function Table(props) {
   return (
-    <div className="w-full bg-white rounded-md shadow-md flex flex-row gap-8 p-8 text-gray-500">
-      <img src="/assets/Rectangle 182.png" alt="img" className="h-40 w-auto " />
-      <div className=" h-full w-[140%]">
+    <div className="w-full bg-white rounded-md shadow-md flex flex-col md:flex-row gap-8 p-8 text-gray-500">
+      <img src="/assets/Rectangle 182.png" alt="img" className="h-20 w-36 md:h-40 md:w-auto " />
+      <div className=" h-full w-[100%]">
         <label className="text-lg text-blue-custom font-Poppins-Medium">{props.title}</label>
         <div className="flex flex-row items-center mt-2">
           <img src="/assets/Group 129.png" alt="locaiton" />
@@ -15,7 +15,7 @@ function Table(props) {
             {props.fees}
           </label>
         </div>
-        <div className="inline-grid gap-1 grid-cols-4 my-3">
+        <div className="inline-grid gap-1 grid-cols-2 lg:grid-cols-4 my-3">
           <div className="flex flex-col">
             <label>Type of course</label>
             <label className="text-2xl">{props.type}</label>
