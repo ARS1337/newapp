@@ -18,7 +18,7 @@ function MainTable(props) {
       </div>
       {props?.data?.tableList?.map((tableData, key) => {
         return (
-          <div className="my-4" key={key}>
+          <div className="my-4 w-full" key={key}>
             <Table
               title={tableData.title}
               location={tableData.location}
@@ -32,7 +32,7 @@ function MainTable(props) {
         );
       })}
       <div className=" w-full flex justify-center mt-4">
-        <div className="grid grid-cols-7 gap-4 text-green-custom font-Poppins-Medium text-lg ">
+        <div className="flex items-center justify-between text-green-custom font-Poppins-Medium text-lg ">
           <label className="w-full p-2 rounded-md hover:bg-green-custom hover:text-white">Previous</label>
           <button className="w-full p-2 rounded-md hover:bg-green-custom hover:text-white">1</button>
           <button className="w-full p-2 rounded-md hover:bg-green-custom hover:text-white">2</button>

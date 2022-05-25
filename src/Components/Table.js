@@ -2,8 +2,8 @@ import React from "react";
 
 function Table(props) {
   return (
-    <div className="w-full bg-white rounded-md shadow-md flex flex-col md:flex-row gap-8 p-8 text-gray-500">
-      <img src="/assets/Rectangle 182.png" alt="img" className="h-20 w-36 md:h-40 md:w-auto " />
+    <div className="w-full bg-white rounded-md shadow-md flex flex-col md:flex-row gap-8 p-4 md:p-8 text-gray-500">
+      <img src="/assets/Rectangle 182.png" alt="img" className="h-28 md:h-20 w-36 md:h-40 md:w-auto " />
       <div className=" h-full w-[100%]">
         <label className="text-lg text-blue-custom font-Poppins-Medium">{props.title}</label>
         <div className="flex flex-row items-center mt-2">
@@ -33,9 +33,9 @@ function Table(props) {
             <label className="text-2xl">{props.mode}</label>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-between ">
-          <button className="p-2 px-3 text-white bg-blue-custom rounded-md text-lg font-Poppins-Regular">Compare</button>
-          <div className="flex flex-row items-center justify-between w-1/3">
+        <div className="flex flex-row items-center justify-between w-full">
+          <button className="p-2 px-3 text-white bg-blue-custom rounded-md text-lg font-Poppins-Regular mr-4">Compare</button>
+          <div className="flex flex-row items-center justify-between w-full">
             <img src="/assets/Group 1.png" alt="download" />
             <a href="/" className="text-gray-600 text-lg font-Poppins-Regular">
               Brochure

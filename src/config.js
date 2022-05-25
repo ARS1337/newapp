@@ -52,6 +52,107 @@ const data = {
     "Didn't find what you're looking for ?",
     "Need help with Accommodation",
     "Need help with Loan",
+  ],
+  testimonials:[
+    {
+      heading:'Marta B. on Aug 29, 20201',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 20202',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2023033',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 20204',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 202054',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    {
+      heading:'Marta B. on Aug 29, 2020',
+      title:'"Great service, very professional"',
+      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+    },
+    
+    
+    
   ]
 };
 

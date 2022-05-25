@@ -7,13 +7,12 @@ import MainPage from "./Pages/MainPage";
 function App() {
   const poleDate = data.poleDate;
   return (
-    <div className="w-full">
+    <div className="w-full  overflow-hidden">
       <div className="flex items-center justify-center ">
         <Header poleDate={poleDate} />
       </div>
-      <MainPage/>
-      <Footer/>
-
+      <MainPage />
+      <Footer />
     </div>
   );
 }
