@@ -95,12 +95,12 @@ function Footer(props) {
         </div>
       </div>
       <div className="flex flex-col items-center md:flex-row justify-center ml-4 md:ml-0   mt-12">
-        <div className="text-white w-full md:w-8/12 flex flex-row items-center justify-start md:mr-24 font-Poppins-Medium ">
+        <div className="text-white w-full md:w-8/12 flex flex-col md:flex-row items-center justify-start md:mr-24 font-Poppins-Medium ">
           <label className="text-green-custom">General Inquiries:</label>&nbsp;
           <label className="text-white"> hr@seaandbeyond.com</label>
         </div>
-        <div className="text-white w-full md:w-4/12 mt-4 md:mt-0 ">
-          <div className="w-40">
+        <div className="text-white w-full flex items-center justify-center md:w-4/12 mt-4 md:mt-0 ">
+          <div className="w-40 md:w-40">
             <CustomButtons
               bgColor="bg-green-custom"
               buttonText="view more"

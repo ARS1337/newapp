@@ -40,15 +40,15 @@ function TestimonialContainer(props) {
     listener();
   }, []);
   return (
-    <div className="w-full drop-shadow-lg p-2 flex flex-col items-center   my-10">
-      <div className="flex flex-row items-center justify-between w-full mb-4">
-        <label className="text-xl font-Poppins-SemiBold">Testimonials from our customers...</label>
+    <div className="w-full drop-shadow-lg p-0 md:p-2 flex flex-col items-center   my-10">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full mb-4">
+        <label className="text-sm md:text-xl font-Poppins-SemiBold  whitespace-nowrap">Testimonials from our customers...</label>
         <div>
           <a
             href="/"
             className=" pt-2 py-2 text-blue-custom font-Poppins-SemiBold flex flex-row items-center justify-between w-full"
           >
-            <div className="pr-2"> See all</div>
+            <div className="pr-1 whitespace-nowrap"> See all</div>
             <img src="/assets/arrow-right.png" alt="" className="h-3 w-auto" />
           </a>
         </div>
@@ -57,7 +57,7 @@ function TestimonialContainer(props) {
         <div className="absolute h-[10%] w-full flex items-center justify-between ">
           <div
             id="leftButton"
-            className="rounded-full h-12 w-12 bg-white flex items-center justify-center font-Poppins-Bold text-2xl drop-shadow-lg"
+            className="rounded-full h-8 w-8 md:h-12 md:w-12 bg-white flex items-center justify-center font-Poppins-Bold text-2xl drop-shadow-lg"
             onClick={() => {
               let scrollContainer = document.getElementById("scrollContainer");
               scrollContainer.scrollBy({
@@ -70,7 +70,7 @@ function TestimonialContainer(props) {
           </div>
           <div
             id="rightButton"
-            className="rounded-full h-12 w-12 bg-white flex items-center justify-center font-Poppins-Bold text-2xl drop-shadow-lg"
+            className="rounded-full  h-8 w-8 md:h-12 md:w-12 bg-white flex items-center justify-center font-Poppins-Bold text-2xl drop-shadow-lg"
             onClick={() => {
               let scrollContainer = document.getElementById("scrollContainer");
               scrollContainer.scrollBy({
