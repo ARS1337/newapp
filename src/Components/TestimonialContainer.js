@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Testimonials from "./Testimonials";
 import data from "../config";
+console.log(data.testimonials.length)
 
 function TestimonialContainer(props) {
   const [isListenerSet, setisListenerSet] = useState(false);
@@ -12,7 +13,7 @@ function TestimonialContainer(props) {
     let leftEndReached = true;
 
     let intervalRight = setInterval(() => {
-      if (rightClicked <= 6 && leftEndReached === true) {
+      if (rightClicked <= 18 && leftEndReached === true) {
         let rightButton = document.getElementById("rightButton");
         rightButton && rightButton.click();
         rightClicked++;
