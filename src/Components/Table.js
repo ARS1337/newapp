@@ -35,7 +35,7 @@ function Table(props) {
         </div>
         <div className="flex flex-row items-center justify-between w-full">
           <button className="p-2 px-3 text-white bg-blue-custom rounded-md text-lg font-Poppins-Regular mr-4">Compare</button>
-          <div className="flex flex-row items-center justify-between w-full">
+          <div className="flex flex-row items-center justify-between w-full max-w-xs">
             <img src="/assets/Group 1.png" alt="download" />
             <a href="/" className="text-gray-600 text-lg font-Poppins-Regular">
               Brochure

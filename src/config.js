@@ -47,113 +47,167 @@ const data = {
       no: "15+",
     },
   ],
-  helpQuestionList:[
-    'Need help with Visa/Forex',
+  helpQuestionList: [
+    "Need help with Visa/Forex",
     "Didn't find what you're looking for ?",
     "Need help with Accommodation",
     "Need help with Loan",
   ],
-  testimonials:[
+  testimonials: [
     {
-      heading:'Marta B. on Aug 29, 20201',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 20201",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 20202',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 20202",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2023033',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2023033",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 20204',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 20204",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 202054',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 202054",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
 
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
     {
-      heading:'Marta B. on Aug 29, 2020',
-      title:'"Great service, very professional"',
-      body:'"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "'
+      heading: "Marta B. on Aug 29, 2020",
+      title: '"Great service, very professional"',
+      body: '"I had multiple versions of my resume and none of them produced expected results. After I spoke with Deepika and received my... "',
     },
-    
-    
-    
-  ]
+  ],
+  programDetails: [
+    {
+      name: "Post Graduate Program in Management (PGPM)",
+      duration: "3 Year",
+      mode: "Part Time, Regular",
+      graduation: "Post Graduation",
+      date: "August 22",
+      fees: "approx. 17.26lakh",
+      eligibility: "12th Pass, Graduate",
+      visa: "Give your career a boost with sea&beyond",
+      scholarshipAvailable: "Yes",
+    },
+    {
+      name: "Post Graduate Program in Management (PGPM)",
+      duration: "3 Year",
+      mode: "Part Time, Regular",
+      graduation: "Post Graduation",
+      date: "August 22",
+      fees: "approx. 17.26lakh",
+      eligibility: "12th Pass, Graduate",
+      visa: "Give your career a boost with sea&beyond",
+      scholarshipAvailable: "Yes",
+    },
+    {
+      name: "Post Graduate Program in Management (PGPM)",
+      duration: "3 Year",
+      mode: "Part Time, Regular",
+      graduation: "Post Graduation",
+      date: "August 22",
+      fees: "approx. 17.26lakh",
+      eligibility: "12th Pass, Graduate",
+      visa: "Give your career a boost with sea&beyond",
+      scholarshipAvailable: "Yes",
+    },
+    {
+      name: "Post Graduate Program in Management (PGPM)",
+      duration: "3 Year",
+      mode: "Part Time, Regular",
+      graduation: "Post Graduation",
+      date: "August 22",
+      fees: "approx. 17.26lakh",
+      eligibility: "12th Pass, Graduate",
+      visa: "Give your career a boost with sea&beyond",
+      scholarshipAvailable: "Yes",
+    },
+    {
+      name: "Post Graduate Program in Management (PGPM)",
+      duration: "3 Year",
+      mode: "Part Time, Regular",
+      graduation: "Post Graduation",
+      date: "August 22",
+      fees: "approx. 17.26lakh",
+      eligibility: "12th Pass, Graduate",
+      visa: "Give your career a boost with sea&beyond",
+      scholarshipAvailable: "Yes",
+    },
+  ],
 };
 
 export default data;

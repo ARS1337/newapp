@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import CustomButtons from "../utils/CustomButtons";
-import CustomSelect from "../utils/CustomSelect";
 import RoundedLink from "../utils/RoundedLink";
 import SearchBar from "../utils/SearchBar";
 import { GiHamburgerMenu } from "react-icons/gi";
 import SimpleDrawer from "./SimpleDrawer";
-import MenuList from "./MenuListCustom";
 import MenuListCustom from "./MenuListCustom";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   const [open, setopen] = useState(false);
@@ -34,31 +33,40 @@ function Header(props) {
           </div>
         </div>
 
-        <div className="w-20 whitespace-nowrap md:w-42 mr-1 md:mr-8   ">
+        <div className="w-20 whitespace-nowrap md:w-24 mr-1 md:mr-8   ">
           <div className=" relative h-10 rounded-md flex items-center justify-between z-50 flex-row bg-green-custom  ">
             <button className=" pl-2 font-Poppins-Medium p-1.5 text-white ">Sign In</button>
             <div className="hidden md:block">
               <img
-                className=" h-5 w-auto  text-lg hidden md:block"
+                className=" h-5 w-auto  text-lg hidden md:block mr-2"
                 src="/assets/arrowRightSignIn.png"
                 alt={props.buttonText}
               />
             </div>
           </div>
         </div>
-        <div className="flex md:hidden p-2 rounded-lg mx-2 bg-dark-blue-custom hover:cursor-pointer" onClick={() => setopen(!open)}>
+        <div
+          className="flex md:hidden p-2 rounded-lg mx-2 bg-dark-blue-custom hover:cursor-pointer"
+          onClick={() => setopen(!open)}
+        >
           <GiHamburgerMenu size={24} color="white" />
           <SimpleDrawer open={open} setopen={setopen} />
         </div>
         <div className="hidden md:flex flex-row items-center justify-start w-4/12 lg:w-4/12 md:4/12">
-          <RoundedLink link="/assets/Path 50.png" />
-          <RoundedLink link="/assets/facebook.png" />
-          <RoundedLink link="/assets/instagram.png" />
+          <Link to="/">
+            <RoundedLink link="/assets/Path 50.png" />
+          </Link>
+          <Link to="Second">
+            <RoundedLink link="/assets/facebook.png" />
+          </Link>
+          <Link to="Third">
+            <RoundedLink link="/assets/instagram.png" />
+          </Link>
           <RoundedLink link="/assets/linkedin.png" />
         </div>
       </div>
 
-      <MenuListCustom direction="flex-row"/>
+      <MenuListCustom direction="flex-row" />
     </div>
   );
 }
