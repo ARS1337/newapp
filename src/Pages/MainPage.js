@@ -1,14 +1,18 @@
-import  Table  from "../Components/Table";
-import React from "react";
+import Table from "../Components/Table";
+import React, { useEffect } from "react";
 import MainTable from "../Components/MainTable";
 import data from "../config";
 
 function MainPage(props) {
+  useEffect(() => {
+    props.setcurrPage("main");
+  }, []);
+
   return (
     <div className="w-full">
       {/* description start */}
       <div className=" flex items-center justify-center ">
-        <div className="w-2/3 flex items-center justify-center flex-col my-12">
+        <div className="w-full text-center md:w-2/3 flex items-center justify-center flex-col my-12">
           <label className="mb-6 text-4xl font-Poppins-SemiBold">Propel Your Career to the next level</label>
           <label className="text-center mb-6 text-gray-500 text-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices dolor non erat sollicitudin, in
@@ -22,8 +26,7 @@ function MainPage(props) {
         </div>
       </div>
       {/* description ends */}
-      <MainTable  data={data}/>
- 
+      <MainTable data={data} />
     </div>
   );
 }

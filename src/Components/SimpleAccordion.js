@@ -9,7 +9,7 @@ function SimpleAccordion(props) {
   return (
     <div className="w-full overflow-hidden ">
       <Accordion >
-        <AccordionSummary expandIcon={<ExpandMoreIcon  fontSize="large"/>} style={props?.style} aria-controls="panel1a-content" id="panel1a-header">
+        <AccordionSummary expandIcon={<ExpandMoreIcon color="#FFFFFF" fontSize="large"/>} style={props?.style} aria-controls="panel1a-content" id="panel1a-header">
           <Typography >{props.heading}</Typography>
         </AccordionSummary>
         <AccordionDetails>

@@ -25,7 +25,7 @@ function Header(props) {
         </div>
       </div>
 
-      <div className="w-full bg-white py-2 px-4 md:lg-4 lg:px-12  flex flex-row items-center justify-center ">
+      <div className="w-full bg-white py-2 px-0 md:lg-4 lg:px-12  flex flex-row items-center justify-center ">
         <div className="flex flex-row items-center justify-center w-full md:w-7/12 ">
           <img src="/assets/image001.png" alt="logo" className="w-auto h-12 mr-2  lg:h-24 lg:mr-12" />
           <div className="w-full mr-2  md:pr-16 sm:w-1/2  ">
@@ -54,13 +54,28 @@ function Header(props) {
         </div>
         <div className="hidden md:flex flex-row items-center justify-start w-4/12 lg:w-4/12 md:4/12">
           <Link to="/">
-            <RoundedLink link="/assets/Path 50.png" />
+            <RoundedLink
+              link="/assets/Path 50.png"
+              onClick={() => {
+                props.setcurrPage("first");
+              }}
+            />
           </Link>
           <Link to="Second">
-            <RoundedLink link="/assets/facebook.png" />
+            <RoundedLink
+              link="/assets/facebook.png"
+              onClick={() => {
+                props.setcurrPage("second");
+              }}
+            />
           </Link>
           <Link to="Third">
-            <RoundedLink link="/assets/instagram.png" />
+            <RoundedLink
+              link="/assets/instagram.png"
+              onClick={() => {
+                props.setcurrPage("third");
+              }}
+            />
           </Link>
           <RoundedLink link="/assets/linkedin.png" />
         </div>
