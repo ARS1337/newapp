@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import React from "react";
 
 import data from "../config";
@@ -6,12 +7,9 @@ const CustomSelect = (props) => {
   return (
     <div className="p-2 bg-blue-custom max-w-[300px]">
       <div className="max-w-xs bg-white rounded-lg p-2 pb-2 ">
-        <select className="max-w-[250px] p-2 bg-transparent font-Poppins-Medium text-xs break-all outline-none">
-          {
-            data.tableList.map
-          }
+        <select className="max-w-[250px] p-0 md:p-2 bg-transparent font-Poppins-Medium text-xs break-all outline-none">
           <option className="font-Poppins-Medium text-xs break-all">
-            HMR Institute of Technology & Management (HMRITM)1
+            <Typography noWrap>HMR Institute of Technology & Management (HMRITM)1</Typography>
           </option>
           <option className="font-Poppins-Medium text-xs break-all">
             HMR Institute of Technology & Management (HMRITM)2

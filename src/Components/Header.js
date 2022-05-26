@@ -27,7 +27,14 @@ function Header(props) {
 
       <div className="w-full bg-white py-2 px-0 md:lg-4 lg:px-12  flex flex-row items-center justify-center ">
         <div className="flex flex-row items-center justify-center w-full md:w-7/12 ">
-          <img src="/assets/image001.png" alt="logo" className="w-auto h-12 mr-2  lg:h-24 lg:mr-12" />
+          <Link
+            to="/"
+            onClick={() => {
+              props.setcurrPage("first");
+            }}
+          >
+            <img src="/assets/image001.png" alt="logo" className="w-auto h-12 mr-2  lg:h-24 lg:mr-12" />
+          </Link>
           <div className="w-full mr-2  md:pr-16 sm:w-1/2  ">
             <SearchBar />
           </div>
@@ -35,7 +42,14 @@ function Header(props) {
 
         <div className="w-20 whitespace-nowrap md:w-24 mr-1 md:mr-8   ">
           <div className=" relative h-10 rounded-md flex items-center justify-between z-50 flex-row bg-green-custom  ">
-            <button className=" pl-2 font-Poppins-Medium p-1.5 text-white ">Sign In</button>
+            <Link
+              to="Second"
+              onClick={() => {
+                props.setcurrPage("second");
+              }}
+            >
+              <button className=" pl-2 font-Poppins-Medium p-1.5 text-white ">Sign In</button>
+            </Link>
             <div className="hidden md:block">
               <img
                 className=" h-5 w-auto  text-lg hidden md:block mr-2"
@@ -45,13 +59,20 @@ function Header(props) {
             </div>
           </div>
         </div>
-        <div
-          className="flex md:hidden p-2 rounded-lg mx-2 bg-dark-blue-custom hover:cursor-pointer"
-          onClick={() => setopen(!open)}
+        <Link
+          to="Third"
+          onClick={() => {
+            props.setcurrPage("third");
+          }}
         >
-          <GiHamburgerMenu size={24} color="white" />
-          <SimpleDrawer open={open} setopen={setopen} />
-        </div>
+          <div
+            className="flex md:hidden p-2 rounded-lg mx-2 bg-dark-blue-custom hover:cursor-pointer"
+            onClick={() => setopen(!open)}
+          >
+            <GiHamburgerMenu size={24} color="white" />
+            <SimpleDrawer open={open} setopen={setopen} />
+          </div>
+        </Link>
         <div className="hidden md:flex flex-row items-center justify-start w-4/12 lg:w-4/12 md:4/12">
           <Link to="/">
             <RoundedLink
