@@ -10,9 +10,6 @@ function MainPage(props) {
 
   return (
     <div className="w-full">
-      {/* description start */}
-      
-      {/* description ends */}
       <MainTable data={data} />
     </div>
   );

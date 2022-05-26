@@ -31,10 +31,11 @@ function App() {
         <Header poleDate={poleDate} setcurrPage={setcurrPage} />
       </div>
       <div className="w-full">
-        {/* Hero section start */}
         {currPage.includes("main") ? (
           <>
             <HeroSection />
+            {/* description start */}
+
             <div className=" flex items-center justify-center ">
               <div className="w-full text-center  flex items-center justify-center flex-col my-12">
                 <label className="mb-6 text-4xl font-Poppins-SemiBold">Propel Your Career to the next level</label>
@@ -49,11 +50,11 @@ function App() {
                 </a>
               </div>
             </div>
+            {/* description ends */}
           </>
         ) : (
           ""
         )}
-        {/* Hero section end */}
 
         {/* table starts */}
         <div className="bg-light-gray-custom flex flex-col lg:flex-row items-start justify-center w-full px-4 md:px-4 lg:px-12">
