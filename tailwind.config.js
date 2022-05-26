@@ -11,6 +11,7 @@ module.exports = {
         'gray-custom':'#2A2A2A',
         'light-gray-custom':'#f8f9fb',
         'dark-blue-custom':'#0E76A8'
+        
       },
       fontFamily: {
         "Poppins-Bold": ["Poppins-Bold", "sans-serif"],
