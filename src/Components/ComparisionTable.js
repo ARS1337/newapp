@@ -7,17 +7,20 @@ const CustomSelect = (props) => {
   return (
     <div className="p-2 bg-blue-custom max-w-[300px]">
       <div className="max-w-xs bg-white rounded-lg p-2 pb-2 ">
-        <select className="max-w-[250px] p-0 md:p-2 bg-transparent font-Poppins-Medium text-xs break-all outline-none">
-          <option className="font-Poppins-Medium text-xs break-all">
-            <Typography noWrap>HMR Institute of Technology & Management (HMRITM)1</Typography>
-          </option>
-          <option className="font-Poppins-Medium text-xs break-all">
-            HMR Institute of Technology & Management (HMRITM)2
-          </option>
-          <option className="font-Poppins-Medium text-xs break-all">
-            HMR Institute of Technology & Management (HMRITM)3
-          </option>
-        </select>
+        <Typography noWrap>
+          <select className="max-w-[250px] p-0 md:p-2 bg-transparent font-Poppins-Medium text-xs break-all outline-none">
+            <option className="font-Poppins-Medium text-xs break-all">
+              <Typography noWrap>HMR Institute of Technology & Management (HMRITM)1</Typography>
+            </option>
+            <option className="font-Poppins-Medium text-xs break-all">
+              HMR Institute of Technology & Management (HMRITM)2
+            </option>
+            <option className="font-Poppins-Medium text-xs break-all">
+              HMR Institute of Technology & Management (HMRITM)3
+            </option>
+            <option className="font-Poppins-Medium text-xs break-all">Find University?</option>
+          </select>
+        </Typography>
       </div>
       <button className="text-green-custom text-lg"> clear</button>
     </div>
@@ -33,7 +36,7 @@ function ComparisionTable(props) {
           <col span="2" />
           <col />
         </colgroup>
-        <thead>
+        <thead className="min-w-[500px] overflow-scroll">
           <tr className="w-full  p-4  ">
             <th className="w-1/4 font-Poppins-Thin text-sm text-white border border-white rounded-tl-xl overflow-hidden bg-blue-custom ">
               University
@@ -45,12 +48,12 @@ function ComparisionTable(props) {
               <CustomSelect />
             </th>
             <th className="w-1/4">
-              <CustomSelect />
+              <CustomSelect checked={true} />
             </th>
           </tr>
         </thead>
-        <tbody>
-          <tr className="w-full bg-white font-Poppins-Thin text-sm">
+        <tbody className="min-w-[500px] overflow-scroll">
+          <tr className="w-full bg-white font-Poppins-Thin text-sm min-w-[500px] overflow-scroll">
             <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">Location</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )

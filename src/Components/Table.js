@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Table(props) {
   return (
@@ -34,7 +35,16 @@ function Table(props) {
           </div>
         </div>
         <div className="flex flex-row items-center justify-between w-full">
-          <button className="p-2 px-3 text-white bg-blue-custom rounded-md text-lg font-Poppins-Regular mr-4">Compare</button>
+          <Link
+            to="Third"
+            onClick={() => {
+              props.setcurrPage("third");
+            }}
+          >
+            <button className="p-2 px-3 text-white bg-blue-custom rounded-md text-lg font-Poppins-Regular mr-4">
+              Compare
+            </button>
+          </Link>
           <div className="flex flex-row items-center justify-between w-full max-w-xs">
             <img src="/assets/Group 1.png" alt="download" />
             <a href="/" className="text-gray-600 text-lg font-Poppins-Regular">

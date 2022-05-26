@@ -3,7 +3,7 @@ import React from "react";
 const ComparisonComponent = (props) => {
   return (
     <div className="bg-white p-4 flex flex-col items-center justify-center rounded-lg my-1">
-      <label className="text-center py-1 text-lg">HMR Institute of Technology & Management (HMRITM)</label>
+      <label className="text-center py-1 text-lg text-blue-custom font-Poppins-SemiBold">HMR Institute of Technology & Management (HMRITM)</label>
       <div className="flex flex-row items-center">
         <img src="/assets/SecondPage/pin.png" alt="location" className="h-4 w-4" />
         <label className="text-xs">NEW DELHI, DELHI NCR ( India )</label>

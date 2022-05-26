@@ -42,14 +42,7 @@ function Header(props) {
 
         <div className="w-20 whitespace-nowrap md:w-24 mr-1 md:mr-8   ">
           <div className=" relative h-10 rounded-md flex items-center justify-between z-50 flex-row bg-green-custom  ">
-            <Link
-              to="Second"
-              onClick={() => {
-                props.setcurrPage("second");
-              }}
-            >
-              <button className=" pl-2 font-Poppins-Medium p-1.5 text-white ">Sign In</button>
-            </Link>
+            <button className=" pl-2 font-Poppins-Medium p-1.5 text-white ">Sign In</button>
             <div className="hidden md:block">
               <img
                 className=" h-5 w-auto  text-lg hidden md:block mr-2"
@@ -59,20 +52,13 @@ function Header(props) {
             </div>
           </div>
         </div>
-        <Link
-          to="Third"
-          onClick={() => {
-            props.setcurrPage("third");
-          }}
+        <div
+          className="flex md:hidden p-2 rounded-lg mx-2 bg-dark-blue-custom hover:cursor-pointer"
+          onClick={() => setopen(!open)}
         >
-          <div
-            className="flex md:hidden p-2 rounded-lg mx-2 bg-dark-blue-custom hover:cursor-pointer"
-            onClick={() => setopen(!open)}
-          >
-            <GiHamburgerMenu size={24} color="white" />
-            <SimpleDrawer open={open} setopen={setopen} />
-          </div>
-        </Link>
+          <GiHamburgerMenu size={24} color="white" />
+          <SimpleDrawer open={open} setopen={setopen} />
+        </div>
         <div className="hidden md:flex flex-row items-center justify-start w-4/12 lg:w-4/12 md:4/12">
           <Link to="/">
             <RoundedLink

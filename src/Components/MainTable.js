@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Table from "./Table";
 
 function MainTable(props) {
@@ -19,15 +20,23 @@ function MainTable(props) {
       {props?.data?.tableList?.map((tableData, key) => {
         return (
           <div className="my-4 w-full" key={key}>
-            <Table
-              title={tableData.title}
-              location={tableData.location}
-              fees={tableData.fees}
-              type={tableData.type}
-              mode={tableData.mode}
-              duration={tableData.duration}
-              no={tableData.no}
-            />
+            <Link
+              to="Second"
+              onClick={() => {
+                props.setcurrPage("second");
+              }}
+            >
+              <Table
+                title={tableData.title}
+                location={tableData.location}
+                fees={tableData.fees}
+                type={tableData.type}
+                mode={tableData.mode}
+                duration={tableData.duration}
+                no={tableData.no}
+                setcurrPage={props.setcurrPage}
+              />
+            </Link>
           </div>
         );
       })}
