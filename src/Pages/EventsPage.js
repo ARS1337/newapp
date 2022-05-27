@@ -6,7 +6,7 @@ const EventCardComponent = (props) => {
   return (
     <div className="w-full bg-white p-2 md:p-3 border-2 border-green-custom flex flex-col items-center rounded-xl my-4 font-Poppins-Regular">
       <div className="flex flex-row items-center justify-between w-full">
-        <label className="text-md md:text-xl">{props.eventDetails.name}</label>
+        <label className="text-md md:text-xl font-Poppins-SemiBold">{props.eventDetails.name}</label>
         <div className="bg-green-custom p-2 px-9 text-white text-md -mr-3 flex flex-row items-center justify-start">
           <div className="h-8 w-8 bg-white -ml-[3.2rem] mr-6 -my-3 rotate-45"></div>
           <label className="text-md md:text-lg">{props.eventDetails.type}</label>
@@ -46,10 +46,10 @@ function EventsPage(props) {
   return (
     <div className="w-full">
       <div className="bg-white rounded-md p-5 flex flex-col my-6 text-gray-500">
-        <label className="text-2xl text-blue-custom font-Poppins-Regular pb-6">
+        <label className="text-2xl text-blue-custom font-Poppins-Bold pb-6">
           Why we want to engage with mariners
         </label>
-        <label className="leading-8">
+        <label className="leading-8 text-lg">
           Suspendisse rutrum sodales libero, sed pulvinar magna pharetra ac. Pellentesque hendrerit, ex eget iaculis
           fringilla, magna ex luctus ante, non tristique sem orci eu justo. Praesent rhoncus rutrum hendrerit.
           Suspendisse pulvinar sem finibus viverra finibus. Duis quis dictum odio, ut convallis libero. Proin mollis
@@ -60,7 +60,7 @@ function EventsPage(props) {
           pretium molestie. Curabitur eget nisi velit. Sed gravida posuere ante quis varius.
         </label>
       </div>
-      <label className="text-2xl text-blue-custom font-Poppins-Regular">Upcoming Events</label>
+      <label className="text-2xl text-blue-custom font-Poppins-Bold">Upcoming Events</label>
       {data.upcomingEvent.map((eventDetails, key) => {
         return (
           <div key={key}>

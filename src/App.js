@@ -63,8 +63,36 @@ function App() {
               <Route path="CVPage" element={<CVPage />} />
               <Route path="EventsPage" element={<EventsPage />} />
             </Routes>
-            <HelpSection questionList={data.helpQuestionList} />
-            <FaqSection />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <HelpSection questionList={data.helpQuestionList} />
+                    <FaqSection />
+                  </>
+                }
+              />
+              <Route
+                path="Second"
+                element={
+                  <>
+                    <HelpSection questionList={data.helpQuestionList} />
+                    <FaqSection />
+                  </>
+                }
+              />
+              <Route
+                path="Third"
+                element={
+                  <>
+                    <HelpSection questionList={data.helpQuestionList} />
+                    <FaqSection />
+                  </>
+                }
+              />
+            </Routes>
+
             <TestimonialContainer autoScroll={true} key="testimonial" heading={true} id="">
               {data.testimonials.map((testimonial, key) => {
                 return (
