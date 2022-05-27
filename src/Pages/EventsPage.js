@@ -70,7 +70,7 @@ function EventsPage(props) {
       })}
       <div className="mt-6">
         <label className="text-2xl text-blue-custom">Our Engagements</label>
-        <div className="flex flex-row items-center justify-between mt-6 overflow-scroll md:overflow-hidden">
+        <div className="flex flex-row items-center justify-between mt-6 overflow-x-scroll md:overflow-hidden">
           <GradientButton
             onClick={() => {
               setcurrTabText(webinarText);

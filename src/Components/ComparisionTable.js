@@ -30,24 +30,21 @@ const CustomSelect = (props) => {
 function ComparisionTable(props) {
   const tableList = data.tableList;
   return (
-    <div className="w-full md:w-full  lg:w-full">
+    <div className="w-full md:w-full  lg:w-full overflow-x-scroll">
       <table className="table-fixed w-full">
-        <colgroup>
-          <col span="2" />
-          <col />
-        </colgroup>
-        <thead className="min-w-[500px] overflow-scroll">
-          <tr className="w-full  p-4  ">
-            <th className="w-1/4 font-Poppins-Thin text-sm text-white border border-white rounded-tl-xl overflow-hidden bg-blue-custom ">
+
+        <thead className="min-w-[500px] ">
+          <tr className="w-full  p-4  overflow-scroll">
+            <th className="w-[300px]  font-Poppins-Thin text-sm text-white border border-white rounded-tl-xl overflow-hidden bg-blue-custom ">
               University
             </th>
-            <th className="max-w-1/4">
+            <th className="w-[300px] ">
               <CustomSelect />
             </th>
-            <th className="w-1/4">
+            <th className="w-[300px] ">
               <CustomSelect />
             </th>
-            <th className="w-1/4">
+            <th className="w-[300px] ">
               <CustomSelect checked={true} />
             </th>
           </tr>
