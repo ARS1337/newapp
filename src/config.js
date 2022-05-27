@@ -208,6 +208,40 @@ const data = {
       scholarshipAvailable: "Yes",
     },
   ],
+  upcomingEvent: [
+    {
+      name: "Find your pole star (2nd batch)",
+      type: "Tournament",
+      seatsRemaining: 10,
+      totalSeats: 120,
+      date: "09th Jan",
+      time: "2:30 PM (IST)",
+    },
+    {
+      name: "Find your pole star (2nd batch)",
+      type: "Webinar",
+      seatsRemaining: 10,
+      totalSeats: 120,
+      date: "09th Jan",
+      time: "2:30 PM (IST)",
+    },
+    {
+      name: "Find your pole star (2nd batch)",
+      type: "Coaching",
+      seatsRemaining: 10,
+      totalSeats: 120,
+      date: "09th Jan",
+      time: "2:30 PM (IST)",
+    },
+    {
+      name: "Find your pole star (2nd batch)",
+      type: "Training",
+      seatsRemaining: 10,
+      totalSeats: 120,
+      date: "09th Jan",
+      time: "2:30 PM (IST)",
+    },
+  ],
 };
 
 export default data;

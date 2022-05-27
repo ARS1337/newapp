@@ -20,49 +20,48 @@ import ThirdPage from "./Pages/ThirdPage";
 import HeroSection from "./Components/HeroSection";
 import { useState } from "react";
 import Testimonials from "./Components/Testimonials";
+import CVPage from "./Pages/CVPage";
+import MainPageDescription from "./Components/MainPageDescription";
+import CVPageHeroSection from "./Components/CVPageHeroSection";
+import EventsPage from "./Pages/EventsPage";
 
 function App() {
   const poleDate = data.poleDate;
-  const [currPage, setcurrPage] = useState("main");
-
   return (
     <div className="w-full  overflow-hidden">
       <div className="flex items-center justify-center ">
-        <Header poleDate={poleDate} setcurrPage={setcurrPage} />
+        <Header poleDate={poleDate} />
       </div>
       <div className="w-full">
-        {currPage.includes("main") ? (
-          <>
-            <HeroSection />
-            {/* description start */}
-
-            <div className=" flex items-center justify-center ">
-              <div className="w-full text-center  flex items-center justify-center flex-col my-12">
-                <label className="mb-6 text-4xl font-Poppins-SemiBold">Propel Your Career to the next level</label>
-                <label className="text-center mb-6 text-gray-500 text-lg md:px-36">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices dolor non erat sollicitudin, in
-                  pretium ante varius. Cras lorem diam, sollicitudin eget tortor vitae, sodales faucibus massa. Nullam
-                  iaculis luctus metus, non interdum nulla commodo ac.
-                </label>
-                <a href="/" className="flex flex-row items-center text-blue-custom font-Poppins-Bold text-lg ">
-                  <div>View more </div>
-                  <img src="/assets/arrow-right.png" className="pl-3 h-4 w-auto" alt="view more" />
-                </a>
-              </div>
-            </div>
-            {/* description ends */}
-          </>
-        ) : (
-          ""
-        )}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <MainPageDescription />
+              </>
+            }
+          />
+          <Route
+            path="CVPage"
+            element={
+              <>
+                <CVPageHeroSection />
+              </>
+            }
+          />
+        </Routes>
 
         {/* table starts */}
         <div className="bg-light-gray-custom flex flex-col lg:flex-row items-start justify-center w-full px-4 md:px-4 lg:px-12">
           <div className="  flex flex-col items-start justify-center w-full md:9/12  lg:w-[60%] xl:6/12">
             <Routes>
-              <Route path="/" element={<MainPage setcurrPage={setcurrPage} />} />
-              <Route path="Second" element={<SecondPageUniversityDetails setcurrPage={setcurrPage} />} />
-              <Route path="Third" element={<ThirdPage setcurrPage={setcurrPage} />} />
+              <Route path="/" element={<MainPage />} />
+              <Route path="Second" element={<SecondPageUniversityDetails />} />
+              <Route path="Third" element={<ThirdPage />} />
+              <Route path="CVPage" element={<CVPage />} />
+              <Route path="EventsPage" element={<EventsPage />} />
             </Routes>
             <HelpSection questionList={data.helpQuestionList} />
             <FaqSection />

@@ -4,9 +4,6 @@ import MainTable from "../Components/MainTable";
 import data from "../config";
 
 function MainPage(props) {
-  useEffect(() => {
-    props.setcurrPage("main");
-  }, []);
 
   return (
     <div className="w-full">

@@ -1,21 +1,7 @@
 import React from "react";
 import SimpleAccordion from "./SimpleAccordion";
-import { HiOutlineCheck } from "react-icons/hi";
-import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
-
-const Listing = (props) => {
-  return (
-    <li className="flex flex-row">
-      <IconContext.Provider value={{ color: "#64DDAC", size: 24, className: "global-class-name" }}>
-        <div>
-          <HiOutlineCheck />
-        </div>
-      </IconContext.Provider>
-      <label className="pl-2 text-gray-custom text-md">{props.text}</label>
-    </li>
-  );
-};
+import CheckmarkListing from "./CheckmarkListing";
 
 function SecondPageTable(props) {
   return (
@@ -24,9 +10,6 @@ function SecondPageTable(props) {
         <label className="text-blue-custom text-lg lg:text-2xl font-Poppins-SemiBold">{props.name}</label>
         <Link
           to="/Third"
-          onClick={() => {
-            props.setcurrPage("third");
-          }}
         >
           <button className="hidden md:block p-2 bg-blue-custom rounded-lg w-full md:w-min text-lg font-Poppins-Medium text-white mt-3 md:mt-0">
             Compare
@@ -52,9 +35,6 @@ function SecondPageTable(props) {
         </div>
         <Link
           to="/Third"
-          onClick={() => {
-            props.setcurrPage("third");
-          }}
         >
           <button className="block md:hidden p-2 bg-blue-custom rounded-lg w-full md:w-min text-lg font-Poppins-Medium text-white mt-3 md:mt-0">
             Compare
@@ -67,9 +47,9 @@ function SecondPageTable(props) {
       <div className="flex flex-col md:flex-row justify-between items-start w-full">
         <SimpleAccordion heading="">
           <ul>
-            <Listing text={"Eligibility:- " + props.eligibility} />
-            <Listing text={"Visa:- " + props.visa} />
-            <Listing text={"Scholorship:- " + props.scholarshipAvailable} />
+            <CheckmarkListing text={"Eligibility:- " + props.eligibility} />
+            <CheckmarkListing text={"Visa:- " + props.visa} />
+            <CheckmarkListing text={"Scholorship:- " + props.scholarshipAvailable} />
           </ul>
         </SimpleAccordion>
 

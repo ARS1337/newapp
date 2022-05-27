@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Ad1(props) {
   return (
@@ -6,10 +7,12 @@ function Ad1(props) {
       <label className="bg-white p-4 rounded-t-lg text-center">
         Give your career a boost with sea&beyond professional services.
       </label>
-      <div className="flex flex-row items-center justify-center p-4 rounded-b-lg bg-green-custom text-white">
-        <label className="pr-4">CV Prep/Evaluation</label>{" "}
-        <img src="/assets/arrowRightSignIn.png" alt="" className="h-4 w-auto" />
-      </div>
+      <Link to="CVPage" className="hover:cursor-pointer">
+        <div className="flex flex-row items-center justify-center p-4 rounded-b-lg bg-green-custom text-white hover:cursor-pointer">
+          <label className="pr-4 hover:cursor-pointer">CV Prep/Evaluation</label>{" "}
+          <img src="/assets/arrowRightSignIn.png" alt="" className="h-4 w-auto hover:cursor-pointer" />
+        </div>
+      </Link>
     </div>
   );
 }

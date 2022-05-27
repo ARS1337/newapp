@@ -37,9 +37,6 @@ function Table(props) {
         <div className="flex flex-row items-center justify-between w-full">
           <Link
             to="Third"
-            onClick={() => {
-              props.setcurrPage("third");
-            }}
           >
             <button className="p-2 px-3 text-white bg-blue-custom rounded-md text-lg font-Poppins-Regular mr-4">
               Compare

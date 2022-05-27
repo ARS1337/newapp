@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import MenuListCustom from "./MenuListCustom";
 import CustomSelect from "../utils/CustomSelect";
+import { Link } from "react-router-dom";
 
 function SimpleDrawer(props) {
   const { open, setopen } = props;
@@ -36,7 +37,9 @@ function SimpleDrawer(props) {
             <hr className="border-gray-400 " />
             <CustomSelect menuName="Sea-commerce" menuList={["Menu 1", "Menu 2 "]} />
             <hr className="border-gray-400 " />
-            <CustomSelect menuName="Events" menuList={["Menu 1", "Menu 2 "]} />
+            <Link to="EventsPage">
+              <CustomSelect menuName="Events" menuList={["Menu 1", "Menu 2 "]} />
+            </Link>
             <hr className="border-gray-400 " />
             <CustomSelect menuName="Tecnologic service " menuList={["Menu 1", "Menu 2 "]} />
             <hr className="border-gray-400 " />

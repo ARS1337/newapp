@@ -21,9 +21,6 @@ const CustomButtonRadio = (props) => {
 
 function SecondPageUniversityDetails(props) {
   const [button, setbutton] = useState(2);
-  useEffect(() => {
-    props.setcurrPage("second");
-  }, []);
   return (
     <div className="w-full">
       <div className="w-full flex flex-col md:flex-row bg-white drop-shadow-lg p-4 md:p-6 mt-12 rounded-lg">
