@@ -34,7 +34,15 @@ const EventCardComponent = (props) => {
 };
 
 function EventsPage(props) {
-  const [currTab, setcurrTab] = useState("Webinar");
+  const webinarText =
+    "webinarText Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod fringilla tempor. Aenean rhoncus mi eget molestie scelerisque. Sed risus sapien, ultricies eu mauris in, consequat tempus velit. Ut mattis vestibulum est id facilisis. Nulla vel dolor sagittis, sagittis est ut, scelerisque massa. Nullam a rutrum eros. Proin et rutrum eros. In vel risus eros...";
+  const tournamentText =
+    "tournamentText Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod fringilla tempor. Aenean rhoncus mi eget molestie scelerisque. Sed risus sapien, ultricies eu mauris in, consequat tempus velit. Ut mattis vestibulum est id facilisis. Nulla vel dolor sagittis, sagittis est ut, scelerisque massa. Nullam a rutrum eros. Proin et rutrum eros. In vel risus eros...";
+  const coachingText =
+    "coachingText Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod fringilla tempor. Aenean rhoncus mi eget molestie scelerisque. Sed risus sapien, ultricies eu mauris in, consequat tempus velit. Ut mattis vestibulum est id facilisis. Nulla vel dolor sagittis, sagittis est ut, scelerisque massa. Nullam a rutrum eros. Proin et rutrum eros. In vel risus eros...";
+  const trainingText =
+    "trainingText Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod fringilla tempor. Aenean rhoncus mi eget molestie scelerisque. Sed risus sapien, ultricies eu mauris in, consequat tempus velit. Ut mattis vestibulum est id facilisis. Nulla vel dolor sagittis, sagittis est ut, scelerisque massa. Nullam a rutrum eros. Proin et rutrum eros. In vel risus eros...";
+  const [currTabText, setcurrTabText] = useState(webinarText);
   return (
     <div className="w-full">
       <div className="bg-white rounded-md p-5 flex flex-col my-6 text-gray-500">
@@ -63,15 +71,38 @@ function EventsPage(props) {
       <div className="mt-6">
         <label className="text-2xl text-blue-custom">Our Engagements</label>
         <div className="flex flex-row items-center justify-between mt-6 overflow-scroll md:overflow-hidden">
-          <GradientButton onClick={() => {}} text="webinar" />
-          <GradientButton onClick={() => {}} text="Tournament" />
-          <GradientButton onClick={() => {}} text="coaching" />
-          <GradientButton onClick={() => {}} text="training" />
+          <GradientButton
+            onClick={() => {
+              setcurrTabText(webinarText);
+            }}
+            text="webinar"
+          />
+          <GradientButton
+            onClick={() => {
+              setcurrTabText(tournamentText);
+            }}
+            text="Tournament"
+          />
+          <GradientButton
+            onClick={() => {
+              setcurrTabText(coachingText);
+            }}
+            text="coaching"
+          />
+          <GradientButton
+            onClick={() => {
+              setcurrTabText(trainingText);
+            }}
+            text="training"
+          />
         </div>
         <div className="h-1 bg-gradient-to-r from-blue-custom to-green-custom w-full border border-gray-300  "></div>
         <div className="bg-white pt-6">
-            
-            <button>View More</button>
+          <div className="text-lg p-4 pb-8" >{currTabText}</div>
+          <button className="bg-green-custom w-full rounded-b-xl p-2 text-white text-lg flex flex-row items-center justify-center">
+            View More
+            <img src="/assets/EventsPage/iconfinder_outlined_log_in_4280467 copy.png" alt="" className="pl-2" />
+          </button>
         </div>
       </div>
     </div>
