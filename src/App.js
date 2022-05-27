@@ -24,6 +24,7 @@ import CVPage from "./Pages/CVPage";
 import MainPageDescription from "./Components/MainPageDescription";
 import CVPageHeroSection from "./Components/CVPageHeroSection";
 import EventsPage from "./Pages/EventsPage";
+import AllPages from "./Pages/AllPages";
 
 function App() {
   const poleDate = data.poleDate;
@@ -62,6 +63,7 @@ function App() {
               <Route path="Third" element={<ThirdPage />} />
               <Route path="CVPage" element={<CVPage />} />
               <Route path="EventsPage" element={<EventsPage />} />
+              <Route path="AllPages" element={<AllPages />} />
             </Routes>
             <Routes>
               <Route
