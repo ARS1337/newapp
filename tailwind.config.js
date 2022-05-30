@@ -29,6 +29,7 @@ module.exports = {
         ad4: "url('/public/assets/pexels-fauxels-3184465.png')",
         adedu: "url('/public/assets/JobsPage/Clip.png')",
         eduhero: "url('/public/assets/JobsPage/hero.png')",
+        linkedinhero: "url('/public/assets/LinkedinPage/banner bg.png')",
       },
     },
   },

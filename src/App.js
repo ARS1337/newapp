@@ -19,7 +19,6 @@ import { Route, Routes } from "react-router";
 import SecondPageUniversityDetails from "./Pages/SecondPageUniversityDetails";
 import ThirdPage from "./Pages/ThirdPage";
 import HeroSection from "./Components/HeroSection";
-import { useState } from "react";
 import Testimonials from "./Components/Testimonials";
 import CVPage from "./Pages/CVPage";
 import MainPageDescription from "./Components/MainPageDescription";
@@ -28,12 +27,12 @@ import EventsPage from "./Pages/EventsPage";
 import AllPages from "./Pages/AllPages";
 import JobsListing from "./Pages/JobsListing";
 import JobListingHeroSection from "./Pages/JobListingHeroSection";
-import { useNavigate } from "react-router-dom";
 import AdJobsPageCarousel from "./Components/AdJobsPageCarousel";
+import LinkedinPage from "./Pages/LinkedinPage";
+import LinkedinPageHeroSection from "./Components/LinkedinPageHeroSection";
 
 function App() {
   const poleDate = data.poleDate;
-  const history = useNavigate();
   return (
     <div className="w-full  overflow-hidden">
       <div className="flex items-center justify-center ">
@@ -66,10 +65,19 @@ function App() {
               </>
             }
           />
+          <Route
+            path="LinkedinPage"
+            element={
+              <>
+                <LinkedinPageHeroSection />
+              </>
+            }
+          />
         </Routes>
 
         {/* table starts */}
         <div className="bg-light-gray-custom flex flex-col lg:flex-row items-start justify-center w-full px-4 md:px-4 lg:px-12">
+          {/* left container */}
           <div className="  flex flex-col items-start justify-center w-full md:9/12  lg:w-[60%] xl:6/12 max-w-full lg:max-w-[900px]">
             <Routes>
               <Route path="/" element={<MainPage />} />
@@ -78,6 +86,7 @@ function App() {
               <Route path="CVPage" element={<CVPage />} />
               <Route path="EventsPage" element={<EventsPage />} />
               <Route path="JobsPage" element={<JobsListing />} />
+              <Route path="LinkedinPage" element={<LinkedinPage />} />
               <Route path="AllPages" element={<AllPages />} />
             </Routes>
             <Routes>
@@ -150,6 +159,26 @@ function App() {
                   </>
                 }
               />
+              <Route
+                path="LinkedinPage"
+                element={
+                  <>
+                    <TestimonialContainer autoScroll={true} key="testimonial" heading={true} id="">
+                      {data.testimonials.map((testimonial, key) => {
+                        return (
+                          <div key={key} className="mx-4 w-[300px] lg:w-[600px]  flex items-center justify-center">
+                            <Testimonials
+                              title={testimonial.title}
+                              heading={testimonial.heading}
+                              body={testimonial.body}
+                            />
+                          </div>
+                        );
+                      })}
+                    </TestimonialContainer>
+                  </>
+                }
+              />
             </Routes>
           </div>
           {/* right container */}
@@ -173,6 +202,7 @@ function App() {
               <Route path="/" element={<Ad5 />} />
               <Route path="Second" element={<Ad5 />} />
               <Route path="Third" element={<Ad5 />} />
+              <Route path="LinkedinPage" element={<Ad5 />} />
             </Routes>
             {/* 6th ad  */}
             <Routes>
@@ -180,6 +210,7 @@ function App() {
               <Route path="/" element={<Ad6 />} />
               <Route path="Second" element={<Ad6 />} />
               <Route path="Third" element={<Ad6 />} />
+              <Route path="LinkedinPage" element={<Ad6 />} />
             </Routes>
             {/* 7th ad   */}
             <Routes>
@@ -187,6 +218,7 @@ function App() {
               <Route path="/" element={<Ad7 />} />
               <Route path="Second" element={<Ad7 />} />
               <Route path="Third" element={<Ad7 />} />
+              <Route path="LinkedinPage" element={<Ad7 />} />
             </Routes>
           </div>
         </div>
