@@ -20,7 +20,7 @@ function LinkedinPage(props) {
         </div>
         <div className="w-full rounded-md bg-green-custom p-2 font-ita lg:p-6 text-white text-xl text-center relative my-4">
           Excerpts from the Survey done by Sea and Beyond on the usage of LinkedIn by mariners (1000 mariners surveyed)
-          <div className="absolute h-12 rotate-45 w-12  border border-gray-400 top-20 left-[47%] border-t-0 border-l-0 bg-green-custom"></div>
+          <div className="absolute h-12 rotate-45 w-12  border  top-20 left-[47%] border-t-0 border-l-0 bg-green-custom"></div>
         </div>
       </div>
     </div>
