@@ -9,6 +9,7 @@ function AllPages(props) {
       <Link to="/Third">Third</Link>
       <Link to="/CVPage">CVPage</Link>
       <Link to="/EventsPage">EventsPage</Link>
+      <Link to="/JobsPage">JobsPage</Link>
     </div>
   );
 }

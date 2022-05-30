@@ -27,6 +27,8 @@ module.exports = {
         "edu-heading": "url('/public/assets/education-heading.png')",
         ad3: "url('/public/assets/pexels-energepiccom-288477.png')",
         ad4: "url('/public/assets/pexels-fauxels-3184465.png')",
+        adedu: "url('/public/assets/JobsPage/Clip.png')",
+        eduhero: "url('/public/assets/JobsPage/hero.png')",
       },
     },
   },

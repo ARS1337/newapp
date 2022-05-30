@@ -242,6 +242,48 @@ const data = {
       time: "2:30 PM (IST)",
     },
   ],
+  jobs: [
+    {
+      name: "Operations Manager    ",
+      location: "New Delhi, Delhi Ncr ( India )",
+      type: "Full Time",
+      position: "Crewing department",
+      experience: "6-8 years",
+      desc: "We are hiring for a master mariner for agency operations, looking for: -Master Mariner with Bulk Carrier / Container ships background..",
+    },
+    {
+      name: "Operations Manager    ",
+      location: "New Delhi, Delhi Ncr ( India )",
+      type: "Part Time",
+      position: "Crewing department",
+      experience: "6-8 years",
+      desc: "We are hiring for a master mariner for agency operations, looking for: -Master Mariner with Bulk Carrier / Container ships background..",
+    },
+    {
+      name: "Operations Manager    ",
+      location: "New Delhi, Delhi Ncr ( India )",
+      type: "Internship",
+      position: "Crewing department",
+      experience: "6-8 years",
+      desc: "We are hiring for a master mariner for agency operations, looking for: -Master Mariner with Bulk Carrier / Container ships background..",
+    },
+    {
+      name: "Operations Manager    ",
+      location: "New Delhi, Delhi Ncr ( India )",
+      type: "Contractual",
+      position: "Crewing department",
+      experience: "6-8 years",
+      desc: "We are hiring for a master mariner for agency operations, looking for: -Master Mariner with Bulk Carrier / Container ships background..",
+    },
+    {
+      name: "Operations Manager    ",
+      location: "New Delhi, Delhi Ncr ( India )",
+      type: "Full Time",
+      position: "Crewing department",
+      experience: "6-8 years",
+      desc: "We are hiring for a master mariner for agency operations, looking for: -Master Mariner with Bulk Carrier / Container ships background..",
+    },
+  ],
 };
 
 export default data;
