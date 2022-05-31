@@ -19,13 +19,7 @@ function MainTable(props) {
       </div>
       {props?.data?.tableList?.map((tableData, key) => {
         return (
-          <div className="my-4 w-full" key={key}>
-            <Link
-              to="Second"
-              onClick={() => {
-                props.setcurrPage("second");
-              }}
-            >
+          <div className="my-6 w-full" key={key}>
               <Table
                 title={tableData.title}
                 location={tableData.location}
@@ -36,7 +30,6 @@ function MainTable(props) {
                 no={tableData.no}
                 setcurrPage={props.setcurrPage}
               />
-            </Link>
           </div>
         );
       })}

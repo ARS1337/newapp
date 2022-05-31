@@ -3,37 +3,44 @@ import Testimonials from "./Testimonials";
 import data from "../config";
 
 function TestimonialContainer(props) {
-  const [isListenerSet, setisListenerSet] = useState(false);
+
+  const leftScroll = () => {
+    let scrollContainer = document.getElementById(props?.id || "scrollContainer");
+    scrollContainer.scrollBy({
+      left: -330,
+      behavior: "smooth",
+    });
+  };
+  const rightScroll = () => {
+    let scrollContainer = document.getElementById(props?.id || "scrollContainer");
+    scrollContainer.scrollBy({
+      left: 330,
+      behavior: "smooth",
+    });
+  };
+
 
   const listener = () => {
-    let rightClicked = 0;
-    let leftClicked = 0;
-    let rightEndReached = false;
-    let leftEndReached = true;
-
-    let intervalRight = setInterval(() => {
-      if (rightClicked <= 18 && leftEndReached === true) {
-        let rightButton = document.getElementById("rightButton");
-        rightButton && rightButton.click();
-        rightClicked++;
-      }
-      if (rightClicked === 6) {
-        rightEndReached = true;
-        clearInterval(intervalRight);
+    let rightCounter = 1;
+    let leftCounter = 9;
+    setInterval(() => {
+      if (rightCounter <= 8 && rightCounter !== 0) {
+        rightScroll();
+        rightCounter++;
+        if (rightCounter === 8) {
+          leftCounter = 8;
+          rightCounter = 0;
+        }
+      } else if (leftCounter >= 0 && leftCounter !== 9) {
+        leftScroll();
+        console.log("left counter ", leftCounter);
+        leftCounter--;
+        if (leftCounter === 0) {
+          leftCounter = 9;
+          rightCounter = 1;
+        }
       }
     }, 2000);
-
-    // let intervalLeft = setInterval(() => {
-    //   if (leftClicked <= 6 && rightEndReached === true) {
-    //     let rightButton = document.getElementById("leftButton");
-    //     rightButton && rightButton.click();
-    //     rightClicked++;
-    //   }
-    //   if (leftClicked === 6) {
-    //     leftEndReached = true;
-    //     clearInterval(intervalLeft);
-    //   }
-    // }, 1000);
   };
 
   useEffect(() => {

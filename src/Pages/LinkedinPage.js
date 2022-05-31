@@ -1,4 +1,5 @@
 import React from "react";
+import CheckmarkListing from "../Components/CheckmarkListing";
 import CustomCard from "../Components/CustomCard";
 
 function LinkedinPage(props) {
@@ -21,6 +22,11 @@ function LinkedinPage(props) {
         <div className="w-full rounded-md bg-green-custom p-2 font-ita lg:p-6 text-white text-xl text-center relative my-4">
           Excerpts from the Survey done by Sea and Beyond on the usage of LinkedIn by mariners (1000 mariners surveyed)
           <div className="absolute h-12 rotate-45 w-12  border  top-20 left-[47%] border-t-0 border-l-0 bg-green-custom"></div>
+        </div>
+        <div className="flex flex-col items-center justify-end">
+            {[1,2,3,4,5].map(text=>{
+                return <CheckmarkListing text={"47% mariners login on LinkedIn everyday"}/>
+            })}
         </div>
       </div>
     </div>

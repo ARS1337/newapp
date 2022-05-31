@@ -56,9 +56,7 @@ function AdJobsPageCarousel(props) {
       }
     }, 2000);
   }, []);
-  useEffect(() => {
-    console.log("currAd ", currAd);
-  }, [currAd]);
+
   return (
     <div className="flex flex-col drop-shadow-lg bg-white rounded-lg w-full">
       <div

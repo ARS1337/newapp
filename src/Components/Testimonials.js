@@ -2,7 +2,7 @@ import React from "react";
 
 function Testimonials(props) {
   return (
-    <div className=" border border-gray-500 rounded-lg p-4 w-[600px] md:w-[300px] flex flex-col text-gray-500">
+    <div className=" border border-gray-500 rounded-lg p-4 w-[600px] md:w-[300px] flex flex-col text-gray-500 bg-white">
       <label className="text-md font-Poppins-Medium">{props.heading}</label>
       <label className="font-Poppins-SemiBold text-lg text-blue-custom">{props.title}</label>
       <label>{props.body}</label>
