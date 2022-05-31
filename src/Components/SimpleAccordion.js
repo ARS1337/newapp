@@ -17,12 +17,12 @@ function SimpleAccordion(props) {
           : "w-full overflow-hidden"
       }
     >
-      <Accordion>
+      <Accordion defaultExpanded={props?.defaultExpanded}>
         <AccordionSummary
           onClick={() => {
             setExpanded(!expanded);
           }}
-          expandIcon={expanded ? <AddIcon fontSize="large" /> : <RemoveIcon fontSize="large" />}
+          expandIcon={expanded ? <RemoveIcon fontSize="large" /> : <AddIcon fontSize="large" />}
           style={props?.headingStyle}
           aria-controls="panel1a-content"
           id="panel1a-header"

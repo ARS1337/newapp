@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Testimonials from "./Testimonials";
 import data from "../config";
+import { IconContext } from "react-icons/lib";
+import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi";
 
 function TestimonialContainer(props) {
-
   const leftScroll = () => {
     let scrollContainer = document.getElementById(props?.id || "scrollContainer");
     scrollContainer.scrollBy({
@@ -19,7 +20,6 @@ function TestimonialContainer(props) {
     });
   };
 
-
   const listener = () => {
     let rightCounter = 1;
     let leftCounter = 9;
@@ -33,14 +33,13 @@ function TestimonialContainer(props) {
         }
       } else if (leftCounter >= 0 && leftCounter !== 9) {
         leftScroll();
-        console.log("left counter ", leftCounter);
         leftCounter--;
         if (leftCounter === 0) {
           leftCounter = 9;
           rightCounter = 1;
         }
       }
-    }, 2000);
+    }, 3500);
   };
 
   useEffect(() => {
@@ -60,8 +59,8 @@ function TestimonialContainer(props) {
               href="/"
               className=" pt-2 py-2 text-blue-custom font-Poppins-SemiBold flex flex-row items-center justify-between w-full"
             >
-              <div className="pr-1 whitespace-nowrap"> See all</div>
-              <img src="/assets/arrow-right.png" alt="" className="h-3 w-auto" />
+              <div className=" whitespace-nowrap text-lg pr-2 "> See all</div>
+              <img src="/assets/firstPageTable/arrow-right.png" alt="" className="h-4 w-auto" />
             </a>
           </div>
         )}
@@ -83,7 +82,11 @@ function TestimonialContainer(props) {
                 });
             }}
           >
-            {"<"}
+            <IconContext.Provider value={{ color: "gray", size: 24, className: "global-class-name" }}>
+              <div className="my-8">
+                <HiOutlineArrowLeft />
+              </div>
+            </IconContext.Provider>
           </div>
           <div
             id={props?.id + "rightButton"}
@@ -97,7 +100,11 @@ function TestimonialContainer(props) {
                 });
             }}
           >
-            {">"}
+            <IconContext.Provider value={{ color: "gray", size: 24, className: "global-class-name" }}>
+              <div className="my-8">
+                <HiOutlineArrowRight />
+              </div>
+            </IconContext.Provider>
           </div>
         </div>
         {props.children}

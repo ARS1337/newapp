@@ -7,7 +7,7 @@ function MainPageDescription(props) {
       <div className=" flex items-center justify-center ">
         <div className="w-full text-center  flex items-center justify-center flex-col my-12">
           <label className="mb-6 text-4xl font-Poppins-SemiBold">Propel Your Career to the next level</label>
-          <label className="text-center mb-6 text-gray-500 text-lg md:px-36">
+          <label className="text-center mb-6 text-gray-500 text-lg px-4 md:max-w-[80%] lg:max-w-[60%] ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices dolor non erat sollicitudin, in
             pretium ante varius. Cras lorem diam, sollicitudin eget tortor vitae, sodales faucibus massa. Nullam iaculis
             luctus metus, non interdum nulla commodo ac.

@@ -46,7 +46,6 @@ function AdJobsPageCarousel(props) {
         }
       } else if (leftCounter >= 0 && leftCounter !== 3) {
         leftScroll();
-        console.log("left counter ", leftCounter);
         setcurrAd(leftCounter);
         leftCounter--;
         if (leftCounter === 0) {

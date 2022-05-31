@@ -38,7 +38,16 @@ import SignUpForm from "./Components/SignUpForm";
 function App() {
   const poleDate = data.poleDate;
   const [showTopArrow, setshowTopArrow] = useState(false);
-  const [showModal, setshowModal] = useState(true);
+  const [showModal, setshowModal] = useState("");
+  const location = window.location.href.split("/")[3];
+
+  useEffect(() => {
+    let showed = sessionStorage.getItem("showedPopUp");
+    if (location == "") {
+      setshowModal(true);
+      sessionStorage.setItem("showedPopUp", true);
+    }
+  }, []);
 
   const handleClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -48,7 +57,6 @@ function App() {
     var rect = element.getBoundingClientRect();
     return rect.top;
   };
-  const location = window.location.href.split("/")[3];
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -67,7 +75,7 @@ function App() {
     return <AllPages />;
   } else {
     return (
-      <div className={showModal ? "w-full max-h-screen overflow-y-hidden main" : "w-full main"}>
+      <div className={showModal ? "w-full max-h-screen overflow-y-hidden main" : "w-full main "}>
         {showModal && <SignUpForm setshowModal={setshowModal} />}
         <div className="flex items-center justify-center ">
           <Header poleDate={poleDate} />
@@ -77,7 +85,7 @@ function App() {
         </div>
         {showTopArrow && (
           <div
-            className="fixed bottom-8 right-8 bg-blue-custom p-1.5 text-white hover:cursor-pointer text-3xl rounded-xl"
+            className="z-50 fixed bottom-8 right-8 bg-blue-custom p-2.5 lg:p-1.5 text-white hover:cursor-pointer text-3xl rounded-xl"
             onClick={handleClick}
           >
             ^
@@ -121,9 +129,9 @@ function App() {
           </Routes>
 
           {/* table starts */}
-          <div className="bg-light-gray-custom flex flex-col lg:flex-row items-start justify-center w-full px-2  md:px-4 lg:px-12">
+          <div className="bg-light-gray-custom flex flex-col max-w-full lg:flex-row items-start justify-center w-full px-2  md:px-4 lg:px-6">
             {/* left container */}
-            <div className="  flex flex-col items-start justify-center w-full md:9/12  lg:w-[70%] xl:6/12 max-w-full lg:max-w-[950px]">
+            <div className="  flex flex-col items-start justify-center w-full md:w-full  lg:w-[70%]  max-w-full lg:max-w-[900px]">
               <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="Second" element={<SecondPageUniversityDetails />} />
@@ -226,7 +234,7 @@ function App() {
               </Routes>
             </div>
             {/* right container */}
-            <div className="mt-20 font-Poppins-Medium lg:ml-6  justify-center flex w-full md:4/12 lg:w-[20%] xl:2/12  max-w-full lg:max-w-[300px] min-w-[260px] flex-col">
+            <div className="mt-20 font-Poppins-Medium   lg:ml-8   justify-center flex w-full md:w-full  lg:w-[20%]   max-w-full lg:max-w-[300px] min-w-[260px] flex-col">
               {/* 1st ad */}
               <Ad1 />
               {/* 2nd ad */}

@@ -6,11 +6,9 @@ function Table(props) {
   const handleClick = (e) => {
     setshowPopup(!showPopup);
   };
-  useEffect(() => {
-    console.log("showPopup ", showPopup);
-  }, [showPopup]);
+
   return (
-    <div className="w-full bg-white rounded-md shadow-md flex flex-col md:flex-row gap-8 p-4 md:p-8 text-gray-500">
+    <div className="w-full bg-white rounded-md shadow-md flex flex-col md:flex-row gap-8 p-4 md:p-4 text-gray-500">
       <img src="/assets/Rectangle 182.png" alt="img" className="h-28 w-32 md:h-32 md:w-32 " />
       <div className=" h-full w-[100%]">
         <Link
@@ -34,38 +32,38 @@ function Table(props) {
             {props.fees}
           </div>
         </div>
-        <div className="lg:flex flex-row items-center justify-start grid grid-cols-2 gap-0 whitespace-nowrap my-4 font-Poppins-Regular  ">
-          <div className="flex flex-col lg:pr-3 lg:border border-gray-400 lg:border-b-0 lg:border-l-0 lg:border-t-0 pb-3 md:pb-0">
+        <div className="md:flex flex-row items-center justify-start grid grid-cols-2 gap-0 whitespace-nowrap my-4 font-Poppins-Regular  ">
+          <div className="flex flex-col md:pr-3 lg:border border-gray-400 lg:border-b-0 lg:border-l-0 lg:border-t-0 pb-3 md:pb-0">
             <label className="text-xs lg:text-xs">Type of course</label>
             <label className="text-md md:text-lg lg:text-xl">{props.type}</label>
           </div>
-          <div className="flex flex-col lg:px-3 lg:border border-gray-400 lg:border-b-0 lg:border-l-0 lg:border-t-0">
+          <div className="flex flex-col md:px-3 lg:border border-gray-400 lg:border-b-0 lg:border-l-0 lg:border-t-0">
             <label className="text-sm md:text-xs">No. of courses</label>
             <label className="text-md lg:text-xl">{props.no}</label>
           </div>
-          <div className="flex flex-col lg:px-3  lg:border border-gray-400 lg:border-b-0 lg:border-l-0 lg:border-t-0 pb-3 md:pb-0">
+          <div className="flex flex-col md:px-3  lg:border border-gray-400 lg:border-b-0 lg:border-l-0 lg:border-t-0 pb-3 md:pb-0">
             <label className="text-sm md:text-xs">Duration</label>
             <label className="text-md lg:text-xl">{props.duration}</label>
           </div>
-          <div className="flex flex-col lg:pl-3">
+          <div className="flex flex-col md:pl-3">
             <label className="text-sm md:text-xs">Mode of Study</label>
             <label className="text-md lg:text-xl">{props.mode}</label>
           </div>
         </div>
         <div className="flex flex-row items-center justify-between w-full">
           <Link to="Third">
-            <button className="p-2 px-5 text-white bg-blue-custom rounded-md text-lg font-Poppins-Medium mr-4">
+            <button className="p-2 px-5 text-white bg-blue-custom rounded-md text-sm lg:text-lg font-Poppins-Medium mr-4">
               Compare
             </button>
           </Link>
-          <div className="flex flex-row items-center justify-between max-w-[250px] min-w-[180px] md:min-w-[220px]">
-            <a href="/" className=" text-xl text-gray-400 font-Poppins-Regular flex flex-row items-center ">
-              <img src="/assets/Group 1.png" alt="download" className=" mr-2 h-6 w-6" />
+          <div className="flex flex-row items-center justify-between md:max-w-[250px] w-full min-w-[150px] max-w-[160px] md:min-w-[230px]">
+            <a href="/" className="text-md md:text-lg lg:text-xl text-gray-400 font-Poppins-Regular flex flex-row items-center ">
+              <img src="/assets/Group 1.png" alt="download" className=" mr-2 h-4 w-4 lg:h-6 lg:w-6" />
               Brochure
             </a>
-            <img src="/assets/call-center.png" alt="call" className="h-6 w-6" />
+            <img src="/assets/call-center.png" alt="call" className="mr-2 h-4 w-4 lg:h-6 lg:w-6" />
             <div className="relative " onClick={handleClick}>
-              <img src="/assets/Union 2.png" alt="call" className="h-6 w-6 " />
+              <img src="/assets/Union 2.png" alt="call" className="mr-2 h-4 w-4 lg:h-6 lg:w-6 " />
               <div className=" h-full w-[20px] absolute -top-44 right-3">
                 <div
                   className={
@@ -79,7 +77,7 @@ function Table(props) {
                   <img src="/assets/firstPageTable/Path 65.png" alt="" className=" m-2" />
                   <img src="/assets/firstPageTable/facebook.png" alt="" className=" m-2" />
                   <div
-                    className={showPopup ? " h-4 w-4 bg-green-custom rotate-45 -bottom-2 absolute block" : " hidden"}
+                    className={showPopup ? " h-4 w-4 bg-green-custom rotate-45 -bottom-1 absolute block" : " hidden"}
                   ></div>
                 </div>
               </div>

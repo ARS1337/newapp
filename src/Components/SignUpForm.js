@@ -4,6 +4,7 @@ import { IoCloseCircleOutline } from "react-icons/io5";
 import CustomButtons from "../utils/CustomButtons";
 
 function SignUpForm(props) {
+  console.log('SignUpForm(props) ',props)
   return (
     <div className="z-50 bg-[rgba(0,0,0,0.4)] absolute h-screen w-screen">
       <div className="fixed top-0 lg:top-10 left-0 lg:left-[35%] md:left-[20%] sm:left-2 md:top-10 z-50 h-screen md:h-full mt-2">
@@ -14,6 +15,7 @@ function SignUpForm(props) {
                 <div
                   onClick={() => {
                     props.setshowModal(false);
+                    console.log('clicked')
                   }}
                   className="self-end"
                 >
