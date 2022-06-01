@@ -27,7 +27,7 @@ function SecondPageUniversityDetails(props) {
         <img
           src="/assets/SecondPage/Rectangle 95.png"
           alt="university placeholder"
-          className="h-28 w-36 md:h-32 md:w-auto border-2 p-3 rounded-lg border-green-custom"
+          className="h-28 w-36 md:h-36 md:w-auto border-2 p-3 rounded-lg border-green-custom"
         />
         <div className="flex flex-col px-2 md:px-6 pt-2 md:pt-0">
           <label className="text-xl lg:text-2xl font-Poppins-SemiBold">
@@ -46,21 +46,21 @@ function SecondPageUniversityDetails(props) {
           onClick={() => {
             setbutton(1);
           }}
-          bgColor={button === 1 ? " bg-green-custom " : "bg-gray-200"}
+          bgColor={button === 1 ? " bg-green-custom text-white" : "bg-gray-200"}
           text="Overview"
         />
         <CustomButtonRadio
           onClick={() => {
             setbutton(2);
           }}
-          bgColor={button === 2 ? " bg-green-custom " : "bg-gray-200"}
+          bgColor={button === 2 ? " bg-green-custom text-white" : "bg-gray-200"}
           text="Course & Fees"
         />
         <CustomButtonRadio
           onClick={() => {
             setbutton(3);
           }}
-          bgColor={button === 3 ? " bg-green-custom " : "bg-gray-200"}
+          bgColor={button === 3 ? " bg-green-custom text-white" : "bg-gray-200"}
           text="Application Process"
         />
       </div>

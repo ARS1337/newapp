@@ -98,7 +98,17 @@ body.modal-open {
   outline: 1px solid #f00 !important;
 }
 */
-
+.ratingHero:before{
+    content: "";
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 380px;
+    background: rgb(0 0 0 / 20%);
+}
 body{
 max-width:100vw !important
 }

@@ -1,15 +1,21 @@
 import React from "react";
+import { IconContext } from "react-icons/lib";
 import SecondPageTable from "./SecondPageTable";
+import { FaFilter } from "react-icons/fa";
 
 function SecondPageTableContainer(props) {
   return (
     <>
-      <div className="flex flex-row items-center justify-between w-full my-8 text-gray-500">
-        <label className="font-Poppins-Medium text-md">1-5 of 50</label>
+      <div className="flex flex-row items-center justify-between w-full my-8 text-gray-400">
+        <label className="font-Poppins-Medium text-lg">1-5 of 50</label>
         <div className="flex flex-row items-center">
-          <img src="Group 5.png" alt="" />
-          <label className="font-Poppins-Medium text-md">Sort by </label>
-          <select className="px-4 p-2 bg-transparent font-Poppins-Medium text-md">
+          <IconContext.Provider value={{ color: "rgb(156 163 175 )", size: 18, className: "global-class-name" }}>
+            <div className="my-8">
+              <FaFilter />
+            </div>
+          </IconContext.Provider>
+          <label className="font-Poppins-Medium text-lg pl-4">Sort by </label>
+          <select className="px-4 p-2 bg-transparent font-Poppins-Medium text-lg">
             <option className="font-Poppins-Medium text-md ">Example</option>
             <option className="font-Poppins-Medium text-md ">Location</option>
             <option className="font-Poppins-Medium text-md ">Recommended</option>

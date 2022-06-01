@@ -11,6 +11,7 @@ function AllPages(props) {
       <Link to="/EventsPage" target="_blank" >EventsPage</Link>
       <Link to="/JobsPage" target="_blank" >JobsPage</Link>
       <Link to="/LinkedinPage" target="_blank" >LinkedinPage</Link>
+      <Link to="/RatingPage" target="_blank" >RatingPage</Link>
     </div>
   );
 }

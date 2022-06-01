@@ -34,6 +34,9 @@ import MenuListCustom from "./Components/MenuListCustom";
 import { useEffect, useState } from "react";
 
 import SignUpForm from "./Components/SignUpForm";
+import RatingPage from "./Pages/RatingPage";
+import RatingsPageHeroSection from "./Components/RatingsPageHeroSection";
+import RatingsDescription from "./Components/RatingsDescription";
 
 function App() {
   const poleDate = data.poleDate;
@@ -75,7 +78,7 @@ function App() {
     return <AllPages />;
   } else {
     return (
-      <div className={showModal ? "w-full max-h-screen overflow-y-hidden main" : "w-full main "}>
+      <div className={showModal ? "w-full max-h-screen overflow-y-hidden main font-Poppins-Regular" : "w-full main font-Poppins-Regular "}>
         {showModal && <SignUpForm setshowModal={setshowModal} />}
         <div className="flex items-center justify-center ">
           <Header poleDate={poleDate} />
@@ -126,12 +129,21 @@ function App() {
                 </>
               }
             />
+            <Route
+              path="RatingPage"
+              element={
+                <>
+                  <RatingsPageHeroSection />
+                  <RatingsDescription/>
+                </>
+              }
+            />
           </Routes>
 
           {/* table starts */}
-          <div className="bg-light-gray-custom flex flex-col max-w-full lg:flex-row items-start justify-center w-full px-2  md:px-4 lg:px-6">
+          <div className="bg-light-gray-custom flex flex-col max-w-full lg:flex-row items-start justify-center w-full  lg:px-6 overflow-clip">
             {/* left container */}
-            <div className="  flex flex-col items-start justify-center w-full md:w-full  lg:w-[70%]  max-w-full lg:max-w-[900px]">
+            <div className="  flex flex-col items-start justify-center w-full md:w-full  lg:w-[70%]  max-w-full lg:max-w-[900px] overflow-clip">
               <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="Second" element={<SecondPageUniversityDetails />} />
@@ -140,6 +152,7 @@ function App() {
                 <Route path="EventsPage" element={<EventsPage />} />
                 <Route path="JobsPage" element={<JobsListing />} />
                 <Route path="LinkedinPage" element={<LinkedinPage />} />
+                <Route path="RatingPage" element={<RatingPage />} />
               </Routes>
               <Routes>
                 <Route
@@ -234,7 +247,7 @@ function App() {
               </Routes>
             </div>
             {/* right container */}
-            <div className="mt-20 font-Poppins-Medium   lg:ml-8   justify-center flex w-full md:w-full  lg:w-[20%]   max-w-full lg:max-w-[300px] min-w-[260px] flex-col">
+            <div className="mt-12 font-Poppins-Medium   lg:ml-8   justify-center flex w-full md:w-full  lg:w-[20%]   max-w-full lg:max-w-[300px] min-w-[260px] flex-col">
               {/* 1st ad */}
               <Ad1 />
               {/* 2nd ad */}

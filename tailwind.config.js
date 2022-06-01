@@ -30,6 +30,31 @@ module.exports = {
         adedu: "url('/public/assets/JobsPage/Clip.png')",
         eduhero: "url('/public/assets/JobsPage/hero.png')",
         linkedinhero: "url('/public/assets/LinkedinPage/banner bg.png')",
+        Ratinghero: "url('/public/assets/RatingPage/rating-bg.jpg')",
+      },
+      animation: {
+        "rotate-clock": "wiggleclock 1s ease-in-out 1 forwards",
+        "rotate-anticlock": "wiggleanticlock 1s ease-in-out 1 forwards",
+        "slideDown": "slideDown 1s ease-in-out 1 forwards",
+        "slideUp": "slideUp 1s ease-in-out 1 forwards",
+      },
+      keyframes: {
+        wiggleclock: {
+          "0%": { transform: "rotate(180deg) " },
+          "100%": { transform: "rotate(0deg) " },
+        },
+        wiggleanticlock: {
+          "0%": { transform: "rotate(0deg)," },
+          "100%": { transform: "rotate(180deg)" },
+        },
+        slideDown: {
+          "0%": { transform: "translateY(0px)" },
+          "100%": { transform: "translateY(80px)" },
+        },
+        slideUp: {
+          "0%": { transform: "translateY(80px)" },
+          "100%": { transform: "translateY(0px)" },
+        },
       },
     },
   },

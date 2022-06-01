@@ -238,6 +238,26 @@ const data = {
       desc: "We are hiring for a master mariner for agency operations, looking for: -Master Mariner with Bulk Carrier / Container ships background..",
     },
   ],
+  marinerInfo1: [
+    "47% mariners login on LinkedIn everyday",
+    "44% mariners update their LinkedIn account even quarter",
+    "58% Mariners think a good LinkedIn profile has helped them in their career (better jobs and new learning's) ",
+    "42% Mariners received more than two job opportunities through LinkedIn",
+  ],
+  marinerInfo2: [
+    " No matter how many complex projects you have managed or ships you have sailed, its not easy to write about yourselves",
+    " Making a personal brand recognizable on professional social media is becoming imperative",
+    " You want to get head hunted by the recruiters or placement companies",
+    " You want to keep yourself updated and want to share your opinions",
+    " You want recognition",
+  ],
+  entry1: ["Evaluation on 10-15 parameters", "Comprehensive report", "Ranking of profile with reasoning"],
+  entry2: ["Profile writing with 100% confidentiality", "Includes Job Profile, Summary", " 3-5 days of Turnover",],
+  whyReasons: [
+    " Most number of LinkedIn followers for a company into our domain",
+    "Helped multiple companies and persons develop their brand",
+    "Team of mariners and HR professionals",
+  ],
 };
 
 export default data;
