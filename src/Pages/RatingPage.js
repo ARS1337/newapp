@@ -1,10 +1,11 @@
 import React from "react";
 import CustomButtons from "../utils/CustomButtons";
+import data from '../config'
 
 function RatingPage(props) {
   return (
     <div className="w-full mt-6">
-      <div className="bg-white p-6 font-Poppins-Regular rounded-lg">
+      <div className="bg-white p-6 font-Poppins-Regular rounded-lg my-6">
         <div className="flex flex-col md:flex-row  items-start md:items-center justify-between">
           <label className="text-3xl text-blue-custom font-Poppins-SemiBold pb-4 md:pb-0">CMA CGM Group</label>
           <CustomButtons
@@ -36,6 +37,16 @@ function RatingPage(props) {
         <div className="text-gray-500 text-md md:text-lg">
           Their largest ship is the CMA CGM Georg Forster which can handle 18,000 twenty-foot containers. Their name is
           an French acronym which stands for “Maritime Freighting Company – General Maritime Company".
+        </div>
+      </div>
+      <div className="bg-white p-6 font-Poppins-Regular rounded-lg my-6">
+        <div className="my-2 text-3xl text-blue-custom font-Poppins-SemiBold">
+            Company Achievements
+        </div>
+        <div className="">
+            {data?.companyAchievements.map((achievements,key)=>{
+                return <div cla> </div>
+            })}
         </div>
       </div>
     </div>

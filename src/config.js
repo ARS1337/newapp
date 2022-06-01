@@ -252,11 +252,29 @@ const data = {
     " You want recognition",
   ],
   entry1: ["Evaluation on 10-15 parameters", "Comprehensive report", "Ranking of profile with reasoning"],
-  entry2: ["Profile writing with 100% confidentiality", "Includes Job Profile, Summary", " 3-5 days of Turnover",],
+  entry2: ["Profile writing with 100% confidentiality", "Includes Job Profile, Summary", " 3-5 days of Turnover"],
   whyReasons: [
     " Most number of LinkedIn followers for a company into our domain",
     "Helped multiple companies and persons develop their brand",
     "Team of mariners and HR professionals",
+  ],
+  companyAchievements: [
+    { year: 2021, achievements: ["Best Shopper, Best Shopper, 2021"] },
+    {
+      year: 2019,
+      achievements: [
+        "LinkedIn Top Companies 2019, LinkedIn, 2019",
+        "Perfect 100 - Human Rights Campaign Foundation's Corporate Equality Index, Human Rights Campaign’s (HRC) Corporate Equality Index, 2019",
+      ],
+    },
+    {
+      year: 2018,
+      achievements: ["2018 Top Companies List, LinkedIn, 2018", "World's Most Admired Companies, Fortune, 2018"],
+    },
+    {
+      year: 2017,
+      achievements: ["2018 Top Companies List, LinkedIn, 2018", "World's Most Admired Companies, Fortune, 2018"],
+    },
   ],
 };
 
