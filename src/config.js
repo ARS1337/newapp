@@ -276,6 +276,37 @@ const data = {
       achievements: ["2018 Top Companies List, LinkedIn, 2018", "World's Most Admired Companies, Fortune, 2018"],
     },
   ],
+  companyDetails: {
+    name: "CMA CGM Group Reviews",
+    rating: 75,
+    starRating: 4,
+    reviews: [
+      {
+        title: "It will be great working in CMA CGM Group",
+        ratingGiven: 4,
+        desc: "work place with no pressure very good co workers willing to work and help new comers. Seniors give advice and support to help new comers ",
+        desc2:'Overall experience is good but salary is not satisfactory...They deduct compulsory for transport and food whether you want or not. Working environment is best',
+        pros: "Free lunch and dinner",
+        cons: "Salary issue",
+      },
+      {
+        title: "It will be great working in CMA CGM Group",
+        ratingGiven: 4,
+        desc: "work place with no pressure very good co workers willing to work and help new comers. Seniors give advice and support to help new comers ",
+        desc2:'Overall experience is good but salary is not satisfactory...They deduct compulsory for transport and food whether you want or not. Working environment is best',
+        pros: "Free lunch and dinner",
+        cons: "Salary issue",
+      },
+      {
+        title: "It will be great working in CMA CGM Group",
+        ratingGiven: 4,
+        desc: "work place with no pressure very good co workers willing to work and help new comers. Seniors give advice and support to help new comers ",
+        desc2:'Overall experience is good but salary is not satisfactory...They deduct compulsory for transport and food whether you want or not. Working environment is best',
+        pros: "Free lunch and dinner",
+        cons: "Salary issue",
+      },
+    ],
+  },
 };
 
 export default data;

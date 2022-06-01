@@ -112,3 +112,24 @@ body.modal-open {
 body{
 max-width:100vw !important
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2E5984; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2E5984; 
+}
