@@ -8,8 +8,8 @@ const EventCardComponent = (props) => {
   return (
     <div className="w-full bg-white p-2 md:p-3 border-2 border-green-custom flex flex-col items-center rounded-xl my-4 font-Poppins-Regular">
       <div className="flex flex-row items-center justify-between w-full">
-        <label className="text-md md:text-xl font-Poppins-SemiBold">{props.eventDetails.name}</label>
-        <div className="bg-green-custom p-2 px-9 text-white text-md -mr-3 flex flex-row items-center justify-start">
+        <label className="text-md md:text-xl font-Poppins-SemiBold w-[50%] md:w-full">{props.eventDetails.name}</label>
+        <div className="bg-green-custom p-2 px-9 text-white text-md -mr-[0.60rem] md:-mr-3 flex flex-row items-center justify-start">
           <div className="h-8 w-8 bg-white -ml-[3.2rem] mr-6 -my-3 rotate-45"></div>
           <label className="text-md md:text-lg">{props.eventDetails.type}</label>
         </div>

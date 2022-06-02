@@ -7,10 +7,15 @@ import { Link } from "react-router-dom";
 function SimpleDrawer(props) {
   const { open, setopen } = props;
   return (
-    <div className="bg-dark-blue-custom ">
-      <Drawer anchor={"left"} open={open} onClose={() => setopen(!open)} sx={{ color: "#0E76A8" }}>
+    // <div className="bg-dark-blue-custom ">
+      <Drawer anchor={"left"} open={open} sx={{ color: "#0E76A8" }} hideBackdrop={true}>
         <div className="w-[300px]  bg-dark-blue-custom text-white h-full">
-          <div className="flex flex-row w-full items-center justify-between bg-[#1f4972] p-4">
+          <div
+            className="flex flex-row w-full items-center justify-between bg-[#1f4972] p-4"
+            onClick={() => {
+              setopen(!open);
+            }}
+          >
             <h1 className="text-xl font-Poppins-SemiBold">Sae & Beyond</h1>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,9 +42,7 @@ function SimpleDrawer(props) {
             <hr className="border-gray-400 " />
             <CustomSelect menuName="Sea-commerce" menuList={["Menu 1", "Menu 2 "]} />
             <hr className="border-gray-400 " />
-            <Link to="EventsPage">
-              <CustomSelect menuName="Events" menuList={["Menu 1", "Menu 2 "]} />
-            </Link>
+            <CustomSelect menuName="Events" menuList={["Menu 1", "Menu 2 "]} />
             <hr className="border-gray-400 " />
             <CustomSelect menuName="Tecnologic service " menuList={["Menu 1", "Menu 2 "]} />
             <hr className="border-gray-400 " />
@@ -47,7 +50,7 @@ function SimpleDrawer(props) {
           </div>
         </div>
       </Drawer>
-    </div>
+    // </div>
   );
 }
 

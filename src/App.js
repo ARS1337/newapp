@@ -257,7 +257,7 @@ function App() {
                 <Route
                   path="EventsPage"
                   element={
-                    <div className="bg-blue-custom w-full rounded-lg drop-shadow-md mt-12 p-4">
+                      <div className="bg-blue-custom w-full rounded-lg drop-shadow-md mt-12 p-4  mr-6">
                       <TestimonialContainer autoScroll={true} key="testimonial" heading={true} id="" headingStyle="text-white">
                         {data.testimonials.map((testimonial, key) => {
                           return (

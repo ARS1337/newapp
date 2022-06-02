@@ -6,7 +6,7 @@ function MenuListCustom(props) {
   return (
     <div
       className={
-        "w-full bg-blue-custom px-4 md:px-12 hidden md:flex items-center text-white justify-center border border-gray-700 py-1 " + props.direction
+        "w-full bg-blue-custom px-4 md:px-12 hidden md:flex items-center text-white justify-center border border-gray-700 " + props.direction
       }
     >
       <CustomSelect menuName="About Us" />
