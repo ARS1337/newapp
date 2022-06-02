@@ -12,7 +12,7 @@ function Ad5(props) {
           </div>
         ))}
       </div>
-      <button className="w-full bg-blue-custom p-3 rounded-md rounded-t-none text-white hover:opacity-90">
+      <button className="w-full bg-blue-custom p-3 rounded-md rounded-t-none text-white hover:opacity-90  drop-shadow-lg">
         See All
       </button>
     </>

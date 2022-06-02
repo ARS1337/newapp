@@ -15,7 +15,7 @@ function Ad6(props) {
           );
         })}
       </div>
-      <button className="w-full bg-blue-custom p-3 rounded-lg rounded-t-none text-white hover:opacity-90">
+      <button className="w-full bg-blue-custom p-3 rounded-lg rounded-t-none text-white hover:opacity-90 drop-shadow-lg">
         Browse All
       </button>
     </>

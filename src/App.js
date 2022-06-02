@@ -37,6 +37,9 @@ import SignUpForm from "./Components/SignUpForm";
 import RatingPage from "./Pages/RatingPage";
 import RatingsPageHeroSection from "./Components/RatingsPageHeroSection";
 import RatingsDescription from "./Components/RatingsDescription";
+import AdRatingPageCarousel1 from "./Components/AdRatingPageCarousel1";
+import AdRatingPage2 from "./Components/AdRatingPage2";
+import AboutUs from "./Pages/AboutUs";
 
 function App() {
   const poleDate = data.poleDate;
@@ -78,7 +81,13 @@ function App() {
     return <AllPages />;
   } else {
     return (
-      <div className={showModal ? "w-full max-h-screen overflow-y-hidden main font-Poppins-Regular" : "w-full main font-Poppins-Regular "}>
+      <div
+        className={
+          showModal
+            ? "w-full max-h-screen overflow-y-hidden main font-Poppins-Regular"
+            : "w-full main font-Poppins-Regular "
+        }
+      >
         {showModal && <SignUpForm setshowModal={setshowModal} />}
         <div className="flex items-center justify-center ">
           <Header poleDate={poleDate} />
@@ -88,7 +97,7 @@ function App() {
         </div>
         {showTopArrow && (
           <div
-            className="z-50 fixed bottom-8 right-8 bg-blue-custom p-2.5 lg:p-1.5 text-white hover:cursor-pointer text-3xl rounded-xl"
+            className="z-50 fixed bottom-8 drop-shadow-lg right-8 bg-blue-custom p-2.5 lg:p-1.5 text-white hover:cursor-pointer text-3xl rounded-xl"
             onClick={handleClick}
           >
             ^
@@ -134,7 +143,7 @@ function App() {
               element={
                 <>
                   <RatingsPageHeroSection />
-                  <RatingsDescription/>
+                  <RatingsDescription />
                 </>
               }
             />
@@ -153,6 +162,7 @@ function App() {
                 <Route path="JobsPage" element={<JobsListing />} />
                 <Route path="LinkedinPage" element={<LinkedinPage />} />
                 <Route path="RatingPage" element={<RatingPage />} />
+                <Route path="AboutUs" element={<AboutUs />} />
               </Routes>
               <Routes>
                 <Route
@@ -182,7 +192,7 @@ function App() {
                   path="Second"
                   element={
                     <>
-                      <HelpSection questionList={data.helpQuestionList} />
+                     <HelpSection questionList={data.helpQuestionList} />
                       <FaqSection />
                       <TestimonialContainer autoScroll={true} key="testimonial" heading={true} id="">
                         {data.testimonials.map((testimonial, key) => {
@@ -205,7 +215,7 @@ function App() {
                   path="Third"
                   element={
                     <>
-                      <HelpSection questionList={data.helpQuestionList} />
+                      <div className="px-2 w-full"><HelpSection questionList={data.helpQuestionList} /></div>
                       <FaqSection />
                       <TestimonialContainer autoScroll={true} key="testimonial" heading={true} id="">
                         {data.testimonials.map((testimonial, key) => {
@@ -244,47 +254,214 @@ function App() {
                     </>
                   }
                 />
+                <Route
+                  path="EventsPage"
+                  element={
+                    <div className="bg-blue-custom w-full rounded-lg drop-shadow-md mt-12 p-4">
+                      <TestimonialContainer autoScroll={true} key="testimonial" heading={true} id="" headingStyle="text-white">
+                        {data.testimonials.map((testimonial, key) => {
+                          return (
+                            <div key={key} className="mx-4 w-[300px] lg:w-[600px]  flex items-center justify-center">
+                              <Testimonials
+                                title={testimonial.title}
+                                heading={testimonial.heading}
+                                body={testimonial.body}
+                              />
+                            </div>
+                          );
+                        })}
+                      </TestimonialContainer>
+                    </div>
+                  }
+                />
+                 <Route
+                  path="CVPage"
+                  element={
+                    <>
+                      <TestimonialContainer autoScroll={true} key="testimonial" heading={true} id="">
+                        {data.testimonials.map((testimonial, key) => {
+                          return (
+                            <div key={key} className="mx-4 w-[300px] lg:w-[600px]  flex items-center justify-center">
+                              <Testimonials
+                                title={testimonial.title}
+                                heading={testimonial.heading}
+                                body={testimonial.body}
+                              />
+                            </div>
+                          );
+                        })}
+                      </TestimonialContainer>
+                    </>
+                  }
+                />
               </Routes>
             </div>
             {/* right container */}
-            <div className="mt-12 font-Poppins-Medium   lg:ml-8   justify-center flex w-full md:w-full  lg:w-[20%]   max-w-full lg:max-w-[300px] min-w-[260px] flex-col">
-              {/* 1st ad */}
-              <Ad1 />
-              {/* 2nd ad */}
-              <Ad2 />
-              {/* 3rd ad */}
+            <div className="mt-12 font-Poppins-Medium px-2 md:px-0  lg:ml-8   justify-center flex w-full md:w-full  lg:w-[20%]   max-w-full lg:max-w-[300px] min-w-[260px] flex-col">
               <Routes>
+                <Route
+                  path="/"
+                  element={
+                    <>
+                      <Ad1 />
+                      <Ad2 />
+                      <Ad3 />
+                      <Ad4 />
+                      <Ad5 />
+                      <Ad6 />
+                      <Ad7 />
+                    </>
+                  }
+                ></Route>
+                <Route
+                  path="Second"
+                  element={
+                    <>
+                      <Ad1 />
+                      <Ad2 />
+                      <Ad3 />
+                      <Ad4 />
+                      <Ad5 />
+                      <Ad6 />
+                      <Ad7 />
+                    </>
+                  }
+                ></Route>
+                <Route
+                  path="Third"
+                  element={
+                    <>
+                      <Ad1 />
+                      <Ad2 />
+                      <Ad3 />
+                      <Ad4 />
+                      <Ad5 />
+                      <Ad6 />
+                      <Ad7 />
+                    </>
+                  }
+                ></Route>
+                <Route
+                  path="RatingPage"
+                  element={
+                    <>
+                      <AdRatingPageCarousel1 />
+                      <AdRatingPage2 />
+                      <Ad2 />
+                      <Ad3 />
+                      <Ad4 />
+                      <Ad7 />
+                      <AdJobsPageCarousel />
+                    </>
+                  }
+                ></Route>
+                <Route
+                  path="LinkedinPage"
+                  element={
+                    <div className="-mt-4">
+                      <Ad3 />
+                      <div className="mb-6">
+                        <Ad5 />
+                      </div>
+                      <Ad4 />
+                      <Ad6 />
+                      <Ad7 />
+                    </div>
+                  }
+                ></Route>
+                <Route
+                  path="JobsPage"
+                  element={
+                    <>
+                      <Ad1 />
+                      <Ad2 />
+                      <Ad3 />
+                      <Ad4 />
+                      <Ad7 />
+                      <AdJobsPageCarousel />
+                    </>
+                  }
+                ></Route>
+                <Route
+                  path="EventsPage"
+                  element={
+                    <>
+                      <Ad3 />
+                      <div className="mb-6">
+                        <Ad5 />
+                      </div>
+                      <Ad4 />
+                      <Ad6 />
+                      <Ad7 />
+                    </>
+                  }
+                ></Route>
+                <Route
+                  path="CVPage"
+                  element={
+                    <>
+                      <Ad3 />
+                      <div className="mb-6">
+                        <Ad5 />
+                      </div>
+                      <Ad4 />
+                      <Ad6 />
+                      <Ad7 />
+                    </>
+                  }
+                ></Route>
+              </Routes>
+
+              {/* 1st ad */}
+              {/* <Routes>
+                <Route exact path="JobsPage" element={<Ad1 />} />
+                <Route path="RatingPage" element={<AdRatingPageCarousel1 />} />
+                <Route path="/" element={<Ad1 />} />
+                <Route path="Second" element={<Ad1 />} />
+                <Route path="Third" element={<Ad1 />} />
+              </Routes> */}
+              {/* 2nd ad */}
+              {/* <Routes>
+                <Route exact path="JobsPage" element={<Ad2 />} />
+                <Route exact path="RatingPage" element={<AdRatingPage2 />} />
+                <Route path="/" element={<Ad2 />} />
+                <Route path="Second" element={<Ad2 />} />
+                <Route path="Third" element={<Ad2 />} />
+              </Routes> */}
+              {/* 3rd ad */}
+              {/* <Routes>
                 <Route exact path="JobsPage" element={<AdEducation />} />
+                <Route exact path="RatingPage" element={<Ad2 />} />
                 <Route path="/" element={<Ad3 />} />
                 <Route path="Second" element={<Ad3 />} />
                 <Route path="Third" element={<Ad3 />} />
-              </Routes>
+              </Routes> */}
               {/* 4th ad */}
-              <Ad4 />
+              {/* <Ad4 /> */}
               {/* 5th page */}
-              <Routes>
+              {/* <Routes>
                 <Route exact path="JobsPage" element={<Ad7 />} />
                 <Route path="/" element={<Ad5 />} />
                 <Route path="Second" element={<Ad5 />} />
                 <Route path="Third" element={<Ad5 />} />
                 <Route path="LinkedinPage" element={<Ad5 />} />
-              </Routes>
+              </Routes> */}
               {/* 6th ad  */}
-              <Routes>
+              {/* <Routes>
                 <Route exact path="JobsPage" element={<AdJobsPageCarousel />} />
                 <Route path="/" element={<Ad6 />} />
                 <Route path="Second" element={<Ad6 />} />
                 <Route path="Third" element={<Ad6 />} />
                 <Route path="LinkedinPage" element={<Ad6 />} />
-              </Routes>
+              </Routes> */}
               {/* 7th ad   */}
-              <Routes>
+              {/* <Routes>
                 <Route exact path="JobsPage" element={<></>} />
                 <Route path="/" element={<Ad7 />} />
                 <Route path="Second" element={<Ad7 />} />
                 <Route path="Third" element={<Ad7 />} />
                 <Route path="LinkedinPage" element={<Ad7 />} />
-              </Routes>
+              </Routes> */}
             </div>
           </div>
         </div>

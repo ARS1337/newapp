@@ -6,16 +6,16 @@ import { FaFilter } from "react-icons/fa";
 function SecondPageTableContainer(props) {
   return (
     <>
-      <div className="flex flex-row items-center justify-between w-full my-8 text-gray-400">
-        <label className="font-Poppins-Medium text-lg">1-5 of 50</label>
+      <div className="flex flex-row items-center justify-between w-full my-8 text-gray-400 px-2">
+        <label className="font-Poppins-Medium text-md lg:text-lg">1-5 of 50</label>
         <div className="flex flex-row items-center">
           <IconContext.Provider value={{ color: "rgb(156 163 175 )", size: 18, className: "global-class-name" }}>
-            <div className="my-8">
+            <div className="my-0 md:my-4 lg:my-8">
               <FaFilter />
             </div>
           </IconContext.Provider>
-          <label className="font-Poppins-Medium text-lg pl-4">Sort by </label>
-          <select className="px-4 p-2 bg-transparent font-Poppins-Medium text-lg">
+          <label className="font-Poppins-Medium text-md lg:text-lg pl-2 pr-2 lg:pl-4 whitespace-nowrap">Sort by </label>
+          <select className="px-0 outline-none lg:px-4 p-2 bg-transparent font-Poppins-Medium text-md lg:text-lg">
             <option className="font-Poppins-Medium text-md ">Example</option>
             <option className="font-Poppins-Medium text-md ">Location</option>
             <option className="font-Poppins-Medium text-md ">Recommended</option>

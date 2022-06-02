@@ -1,5 +1,7 @@
 import { Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
+import { IconContext } from "react-icons/lib";
+import { MdLocationOn } from "react-icons/md";
 import MainTable from "../Components/MainTable";
 import SecondPageTableContainer from "../Components/SecondPageTableContainer";
 import data from "../config";
@@ -34,7 +36,9 @@ function SecondPageUniversityDetails(props) {
             Indian Institue of Technology of Delhi, Delhi Overview
           </label>
           <div className="flex flex-row items-center justify-start pt-0.5">
-            <img src="/assets/SecondPage/pin.png" alt="location" className="h-4 w-4" />
+            <IconContext.Provider value={{size:24,color:'#64DDAC'}}>
+                <MdLocationOn/>
+            </IconContext.Provider>
             <label className="text-green-custom text-lg font-Poppins-Regular pl-0 md:pl-2">
               New Delhi, Delhi Ncr ( India )
             </label>

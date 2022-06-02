@@ -8,14 +8,14 @@ function TestimonialContainer(props) {
   const leftScroll = () => {
     let scrollContainer = document.getElementById(props?.id || "scrollContainer");
     scrollContainer.scrollBy({
-      left: -330,
+      left: -props?.scrollBy || -330,
       behavior: "smooth",
     });
   };
   const rightScroll = () => {
     let scrollContainer = document.getElementById(props?.id || "scrollContainer");
     scrollContainer.scrollBy({
-      left: 330,
+      left: props?.scrollBy || 330,
       behavior: "smooth",
     });
   };
@@ -48,10 +48,10 @@ function TestimonialContainer(props) {
     }
   }, []);
   return (
-    <div className="w-full drop-shadow-lg p-0 md:p-2 flex flex-col items-center   my-10">
-      <div className="flex flex-col md:flex-row items-center justify-between w-full mb-4">
-        <label className="text-sm md:text-xl font-Poppins-SemiBold  whitespace-nowrap">
-          {props?.heading && "Testimonials from our customers..."}
+    <div className={"w-full drop-shadow-lg p-0 md:p-2 flex flex-col items-center my-4" + " " + props?.bodyStyle}>
+      <div className="flex flex-col md:flex-row items-center justify-between w-full mb-4 px-2">
+        <label className={"text-md md:text-xl font-Poppins-SemiBold  whitespace-nowrap" + " " + props?.headingStyle}>
+          {props?.heading && !props?.newHeading ? "Testimonials from our customers..." : props.newHeading}
         </label>
         {props?.heading && (
           <div>
@@ -59,8 +59,10 @@ function TestimonialContainer(props) {
               href="/"
               className=" pt-2 py-2 text-blue-custom font-Poppins-SemiBold flex flex-row items-center justify-between w-full"
             >
-              <div className=" whitespace-nowrap text-lg pr-2 "> See all</div>
-              <img src="/assets/firstPageTable/arrow-right.png" alt="" className="h-4 w-auto" />
+              <div className={" whitespace-nowrap text-lg pr-2 " + " " + props?.headingStyle}> See all</div>
+              <IconContext.Provider value={{ color: props?.arrowColor , size: 24, className: "global-class-name" }}>
+                  <HiOutlineArrowRight />
+              </IconContext.Provider>
             </a>
           </div>
         )}
@@ -69,7 +71,7 @@ function TestimonialContainer(props) {
         className="flex flex-row items-center justify-between p-0  w-full overflow-x-hidden"
         id={props?.id || "scrollContainer"}
       >
-        <div className="absolute h-[10%] w-full flex items-center justify-between ">
+        <div className="absolute h-[10%] w-full ml-0 md:w-[103%] md:-ml-[3%] flex items-center justify-between ">
           <div
             id={props?.id + "leftButton"}
             className="rounded-full h-8 w-8 md:h-12 md:w-12 bg-white flex items-center justify-center font-Poppins-Bold text-2xl drop-shadow-lg"
@@ -77,7 +79,7 @@ function TestimonialContainer(props) {
               let scrollContainer = document.getElementById(props?.id || "scrollContainer");
               props?.autoScroll &&
                 scrollContainer.scrollBy({
-                  left: -330,
+                  left: -props?.scrollBy || -330,
                   behavior: "smooth",
                 });
             }}
@@ -95,7 +97,7 @@ function TestimonialContainer(props) {
               let scrollContainer = document.getElementById(props?.id || "scrollContainer");
               props?.autoScroll &&
                 scrollContainer.scrollBy({
-                  left: 330,
+                  left: props?.scrollBy || 330,
                   behavior: "smooth",
                 });
             }}

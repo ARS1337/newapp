@@ -30,12 +30,12 @@ const CustomSelect = (props) => {
 function ComparisionTable(props) {
   const tableList = data.tableList;
   return (
-    <div className="w-full md:w-full  lg:w-full overflow-x-scroll">
+    <div className="w-full md:w-full  lg:w-full overflow-x-scroll lg:overflow-x-hidden font-Poppins-Regular font-[500] drop-shadow-md">
       <table className="table-fixed w-full">
 
         <thead className="min-w-[500px] ">
           <tr className="w-full  p-4  overflow-scroll">
-            <th className="w-[300px]  font-Poppins-Thin text-sm text-white border border-white rounded-tl-xl overflow-hidden bg-blue-custom ">
+            <th className="w-[300px]   text-sm text-white border border-white  rounded-tl-xl overflow-hidden bg-blue-custom ">
               University
             </th>
             <th className="w-[300px] ">
@@ -50,8 +50,8 @@ function ComparisionTable(props) {
           </tr>
         </thead>
         <tbody className="min-w-[500px] overflow-scroll">
-          <tr className="w-full bg-white font-Poppins-Thin text-sm min-w-[500px] overflow-scroll">
-            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">Location</th>
+          <tr className="w-full bg-white text-sm min-w-[500px] overflow-scroll">
+            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white text-sm font-[500] ">Location</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )
             </th>
@@ -60,8 +60,8 @@ function ComparisionTable(props) {
             </th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">Year</th>
           </tr>
-          <tr className="w-full bg-white font-Poppins-Thin text-sm">
-            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">Type of Courses</th>
+          <tr className="w-full bg-white  text-sm">
+            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white text-sm font-[500]">Type of Courses</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )
             </th>
@@ -70,8 +70,8 @@ function ComparisionTable(props) {
             </th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">Year</th>
           </tr>
-          <tr className="w-full bg-white font-Poppins-Thin text-sm">
-            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">No. of Courses</th>
+          <tr className="w-full bg-white  text-sm">
+            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white text-sm font-[500]">No. of Courses</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )
             </th>
@@ -80,8 +80,8 @@ function ComparisionTable(props) {
             </th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">Year</th>
           </tr>
-          <tr className="w-full bg-white font-Poppins-Thin text-sm">
-            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">Courses Fees</th>
+          <tr className="w-full bg-white  text-sm">
+            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white text-sm font-[500]">Courses Fees</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )
             </th>
@@ -90,8 +90,8 @@ function ComparisionTable(props) {
             </th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">Year</th>
           </tr>
-          <tr className="w-full bg-white font-Poppins-Thin text-sm">
-            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">Duration</th>
+          <tr className="w-full bg-white  text-sm">
+            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white text-sm font-[500]">Duration</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )
             </th>
@@ -101,8 +101,8 @@ function ComparisionTable(props) {
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">Year</th>
           </tr>
 
-          <tr className="w-full bg-white font-Poppins-Thin text-sm">
-            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">Made of Study</th>
+          <tr className="w-full bg-white  text-sm">
+            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white text-sm font-[500]">Made of Study</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )
             </th>
@@ -111,8 +111,8 @@ function ComparisionTable(props) {
             </th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">Year</th>
           </tr>
-          <tr className="w-full bg-white font-Poppins-Thin text-sm">
-            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">Placement</th>
+          <tr className="w-full bg-white  text-sm">
+            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white text-sm font-[500]">Placement</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )
             </th>
@@ -121,8 +121,8 @@ function ComparisionTable(props) {
             </th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">Year</th>
           </tr>
-          <tr className="w-full bg-white font-Poppins-Thin text-sm">
-            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white">Work Visa</th>
+          <tr className="w-full bg-white  text-sm">
+            <th className="w-1/4 bg-blue-custom py-5 text-white border border-white text-sm font-[500]">Work Visa</th>
             <th className="w-1/4 bg-white py-4 text-black border border-gray-400 border-t-0">
               New Delhi, Delhi Ncr ( India )
             </th>

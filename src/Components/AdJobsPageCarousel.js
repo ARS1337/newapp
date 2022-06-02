@@ -38,7 +38,7 @@ function AdJobsPageCarousel(props) {
     setInterval(() => {
       if (rightCounter <= 3 && rightCounter !== 0) {
         rightScroll();
-        setcurrAd(rightCounter+1);
+        setcurrAd(rightCounter + 1);
         rightCounter++;
         if (rightCounter === 3) {
           leftCounter = 2;
@@ -57,30 +57,30 @@ function AdJobsPageCarousel(props) {
   }, []);
 
   return (
-    <div className="flex flex-col drop-shadow-lg bg-white rounded-lg w-full">
+    <div className="flex flex-col drop-shadow-lg bg-white rounded-lg w-full mb-6">
       <div
-        className="   flex flex-row items-center justify-between  overflow-x-hidden w-full "
+        className="   flex flex-row items-center justify-between  overflow-x-hidden md:w-full "
         id="jobsscrollcontainer"
       >
         {[1, 2, 3].map((x) => {
           return (
-            <div
-              key={"jobs" + x}
-              className="flex flex-col  items-center justify-center max-w-1/3  min-w-[300px] p-2 text-gray-500"
-            >
-              <IconContext.Provider value={{ color: "#64DDAC", size: 48, className: "global-class-name" }}>
-                <div className="my-8">
-                  <FaQuoteLeft />
+              <div
+                key={"jobs" + x}
+                className="flex flex-col  items-center justify-center max-w-1/3 px-4 md:px-0 min-w-[310px] md:min-w-[300px] max-w-[300px] p-2 text-gray-500"
+              >
+                <IconContext.Provider value={{ color: "#64DDAC", size: 48, className: "global-class-name" }}>
+                  <div className="my-8">
+                    <FaQuoteLeft />
+                  </div>
+                </IconContext.Provider>
+                <div className="text-center text-lg px-2">
+                  {x +
+                    " An unemployed and introverted Steven is passionate about practising ventriloquy. When his best friend Fangora."}
                 </div>
-              </IconContext.Provider>
-              <div className="text-center text-lg px-2">
-                {x +
-                  " An unemployed and introverted Steven is passionate about practising ventriloquy. When his best friend Fangora."}
+                <div className="h-[0.100rem] border border-gray-400 w-[200%] my-5"></div>
+                <div className="text-xl text-gray-700 my-1 text-center">Saurabh Rathore</div>
+                <div className="text-center px-1">Director/ Head of Operations Braemar ACM Shipbroking India</div>
               </div>
-              <div className="h-[0.100rem] border border-gray-400 w-[200%] my-5"></div>
-              <div className="text-xl text-gray-700 my-1 text-center">Saurabh Rathore</div>
-              <div className="text-center px-1">Director/ Head of Operations Braemar ACM Shipbroking India</div>
-            </div>
           );
         })}
       </div>

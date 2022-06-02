@@ -3,12 +3,12 @@ import React from "react";
 function CVPageHeroSection(props) {
   return (
     <div className="w-full flex items-center justify-evenly bg-custom-white">
-      <div className="flex flex-col items-start justify-center text-dark-blue-custom text-md md:text-4xl ml-2 md:ml-0">
-        <label> BETTER RESUME. </label>
-        <label> SATISFYING CAREER. </label>
-        <label> HAPPIER YOU. </label>
+      <div className="flex flex-col items-start justify-center text-blue-custom font-Poppins-Medium text-md md:text-3xl ml-2 md:ml-0">
+        <label className="leading-8 lg:leading-[3rem]"> BETTER <label className="font-Poppins-SemiBold">RESUME.</label> </label>
+        <label className="leading-8 lg:leading-[3rem]"> SATISFYING <label className="font-Poppins-SemiBold">CAREER.</label> </label>
+        <label className="leading-8 lg:leading-[3rem]"> HAPPIER <label className="font-Poppins-SemiBold">YOU.</label> </label>
       </div>
-      <img src='/assets/CVPage/Capture.jpg' alt="better resume" className="h-36 xs:h-32 md:h-44 lg:h-auto w-auto"/>
+      <img src='/assets/CVPage/Capture.jpg' alt="better resume" className="w-44 xs:w-44 md:w-44  lg:w-[25rem] h-auto"/>
     </div>
   );
 }

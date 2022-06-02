@@ -10,7 +10,7 @@ import AddIcon from "@mui/icons-material/Add";
 
 function FaqSection(props) {
   return (
-    <div className="w-full  rounded-lg">
+    <div className="w-full  rounded-lg px-2">
       <div className="w-full overflow-hidden ">
         <Accordion sx={{}} defaultExpanded={true}>
           <AccordionSummary

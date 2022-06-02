@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { IconContext } from "react-icons";
+import { BsArrowRight } from "react-icons/bs";
 import GradientButton from "../Components/GradientButton";
 import data from "../config";
 
@@ -25,8 +27,11 @@ const EventCardComponent = (props) => {
           <label>{props.eventDetails.date.toUpperCase() + " | "}</label>&nbsp;
           <label>{props.eventDetails.time}</label>
         </div>
-        <button className="border-2 border-dark-blue-custom text-blue-custom rounded-md p-2 px-4 mb-2 md:mb-0">
-          Register now
+        <button className="border border-dark-blue-custom text-blue-custom rounded-md p-2 px-4 mb-2 md:mb-0 flex flex-row items-center justify-center">
+         <div className="pr-2"> Explore more</div>
+          <IconContext.Provider value={{ size: 22, color: "#2E5984" }}>
+            <BsArrowRight />
+          </IconContext.Provider>
         </button>
       </div>
     </div>
@@ -44,9 +49,9 @@ function EventsPage(props) {
     "trainingText Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod fringilla tempor. Aenean rhoncus mi eget molestie scelerisque. Sed risus sapien, ultricies eu mauris in, consequat tempus velit. Ut mattis vestibulum est id facilisis. Nulla vel dolor sagittis, sagittis est ut, scelerisque massa. Nullam a rutrum eros. Proin et rutrum eros. In vel risus eros...";
   const [currTabText, setcurrTabText] = useState(webinarText);
   return (
-    <div className="w-full">
-      <div className="bg-white rounded-md p-5 flex flex-col my-6 text-gray-500">
-        <label className="text-2xl text-blue-custom font-Poppins-Bold pb-6">
+    <div className="w-full px-2 md:px-0">
+      <div className="bg-white rounded-md p-6 flex flex-col my-6 text-gray-500">
+        <label className="text-3xl text-blue-custom font-Poppins-SemiBold py-6">
           Why we want to engage with mariners
         </label>
         <label className="leading-8 text-lg">
@@ -60,7 +65,7 @@ function EventsPage(props) {
           pretium molestie. Curabitur eget nisi velit. Sed gravida posuere ante quis varius.
         </label>
       </div>
-      <label className="text-2xl text-blue-custom font-Poppins-Bold">Upcoming Events</label>
+      <label className="text-3xl text-blue-custom font-Poppins-SemiBold">Upcoming Events</label>
       {data.upcomingEvent.map((eventDetails, key) => {
         return (
           <div key={key}>
@@ -69,7 +74,7 @@ function EventsPage(props) {
         );
       })}
       <div className="mt-6">
-        <label className="text-2xl text-blue-custom">Our Engagements</label>
+        <label className="text-3xl text-blue-custom font-Poppins-SemiBold">Our Engagements</label>
         <div className="flex flex-row items-center justify-between mt-6 overflow-x-scroll md:overflow-hidden">
           <GradientButton
             onClick={() => {
@@ -97,9 +102,9 @@ function EventsPage(props) {
           />
         </div>
         <div className="h-1 bg-gradient-to-r from-blue-custom to-green-custom w-full border border-gray-300  "></div>
-        <div className="bg-white pt-6">
-          <div className="text-lg p-4 pb-8" >{currTabText}</div>
-          <button className="bg-green-custom w-full rounded-b-xl p-2 text-white text-lg flex flex-row items-center justify-center">
+        <div className="bg-white pt-2">
+          <div className="text-lg p-4 pb-8 text-gray-500 p-6">{currTabText}</div>
+          <button className="bg-green-custom w-full rounded-b-xl p-3 text-white text-lg flex flex-row items-center justify-center">
             View More
             <img src="/assets/EventsPage/iconfinder_outlined_log_in_4280467 copy.png" alt="" className="pl-2" />
           </button>

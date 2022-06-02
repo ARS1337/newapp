@@ -46,29 +46,29 @@ function SecondPageTable(props) {
       <div>
         <label className="text-blue-custom text-lg lg:text-2xl font-Poppins-Bold ">Fees:&nbsp;{props.fees}</label>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-start w-full relative">
-        <div className="h-20 w-[60%] z-50 absolute bg-white" onClick={handleClick}>
-          <IconContext.Provider
-            value={{
-              color: "white",
-              size: 32,
-              className: showAccordion
-                ? "animate-rotate-clock  global-class-name bg-green-custom rounded-full"
-                : "animate-rotate-anticlock  global-class-name bg-green-custom rounded-full",
-            }}
-          >
-            <div className="my-8">
-              <IoIosArrowUp />
-            </div>
-          </IconContext.Provider>
-        </div>
-        <ul className="absolute z-40 top-0 left-0">
+      <div className={showAccordion ? "  showHeight mt-2" : "   hideHeight mt-2"}>
+        <ul>
           <CheckmarkListing text={"Eligibility:- " + props.eligibility} />
           <CheckmarkListing text={"Visa:- " + props.visa} />
           <CheckmarkListing text={"Scholorship:- " + props.scholarshipAvailable} />
         </ul>
+      </div>
 
-        <div className="flex flex-row items-center justify-between w-[40%]  max-w-[200px] pt-2 mb-4 md:mb-0">
+      <div className="flex flex-row justify-between items-start w-full relative my-3 ">
+        <div onClick={handleClick} >
+          <IconContext.Provider
+            value={{
+              color: "white",
+              size: 30,
+              className: showAccordion
+                ? "animate-rotate-clock   global-class-name bg-green-custom rounded-full "
+                : "animate-rotate-anticlock   global-class-name bg-green-custom rounded-full",
+            }}
+          >
+              <IoIosArrowUp />
+          </IconContext.Provider>
+        </div>
+        <div className="flex flex-row items-center justify-between w-[60%] max-w-[250px] md:max-w-[200px] pt-2 mb-3 md:mb-0 ">
           <img src="/assets/Group 1.png" alt="download" />
           <a href="/" className="text-gray-400 text-lg font-Poppins-Regular">
             Brochure

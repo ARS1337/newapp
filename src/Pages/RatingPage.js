@@ -2,12 +2,12 @@ import React from "react";
 import CustomButtons from "../utils/CustomButtons";
 import data from "../config";
 import { IconContext } from "react-icons";
-import { MdArrowRightAlt } from "react-icons/md";
-import { AiFillStar, AiOutlineMinus, AiOutlineStar } from "react-icons/ai";
+import { MdArrowRightAlt, MdLocationOn } from "react-icons/md";
+import { AiFillStar, AiOutlineMinus } from "react-icons/ai";
 import { CircularProgress, Rating } from "@mui/material";
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/system";
-import { MdStarRate } from "react-icons/md";
+import TestimonialContainer from "../Components/TestimonialContainer";
 
 function RatingPage(props) {
   const theme = createTheme({
@@ -169,6 +169,39 @@ function RatingPage(props) {
           <button className="w-full p-2 px-3 rounded-md hover:bg-green-custom hover:text-white">5</button>
           <label className="w-full p-2 px-3 rounded-md hover:bg-green-custom hover:text-white">Next</label>
         </div>
+      </div>
+
+      <div className="p-2 bg-white rounded-lg z-50">
+        <TestimonialContainer
+          autoScroll={true}
+          key="testimonial"
+          heading={true}
+          newHeading="Similar Jobs"
+          id="similarJobs"
+          headingStyle="text-blue-custom text-xl md:text-xl lg:text-2xl"
+        >
+          {data.testimonials.map((testimonial, key) => {
+            return (
+              <div key={key} className="mx-4 min-w-[300px] lg:w-[600px]  flex items-center justify-center">
+                <div className=" flex flex-col text-gray-500 bg-gray-100 rounded-lg w-full ">
+                  <label className=" p-4 rounded-t-lg text-center text-black ">Ship Management</label>
+                  <hr className="border-gray-400 " />
+                  <div className="flex flex-row items-center justify-start p-2">
+                    <IconContext.Provider value={{ size: 24, color: "#A6A6A6" }}>
+                      <MdLocationOn />
+                    </IconContext.Provider>
+                    <label>Mumbai, India</label>
+                  </div>
+                  <label className="font-Poppins-Medium text-md pl-4 text-blue-custom pb-4">Technical Supt'd...</label>
+                  <div className="flex flex-row items-center justify-center p-4 rounded-b-lg bg-green-custom text-white">
+                    <label className="pr-4">View More</label>{" "}
+                    <img src="/assets/arrowRightSignIn.png" alt="" className="h-4 w-auto" />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </TestimonialContainer>
       </div>
     </div>
   );

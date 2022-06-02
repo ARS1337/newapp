@@ -33,10 +33,10 @@ module.exports = {
         Ratinghero: "url('/public/assets/RatingPage/rating-bg.jpg')",
       },
       animation: {
-        "rotate-clock": "wiggleclock 1s ease-in-out 1 forwards",
-        "rotate-anticlock": "wiggleanticlock 1s ease-in-out 1 forwards",
-        "slideDown": "slideDown 1s ease-in-out 1 forwards",
-        "slideUp": "slideUp 1s ease-in-out 1 forwards",
+        "rotate-clock": "wiggleclock 0.2s ease-in-out 1 forwards",
+        "rotate-anticlock": "wiggleanticlock 0.2s ease-in-out 1 forwards",
+        // "hplus": "hplus 0.3s ease-in-out 1 forwards",
+        // "hminus": "hminus 0.3s ease-in-out 1 forwards",
       },
       keyframes: {
         wiggleclock: {
@@ -47,15 +47,18 @@ module.exports = {
           "0%": { transform: "rotate(0deg)," },
           "100%": { transform: "rotate(180deg)" },
         },
-        slideDown: {
-          "0%": { transform: "translateY(0px)" },
-          "100%": { transform: "translateY(80px)" },
-        },
-        slideUp: {
-          "0%": { transform: "translateY(80px)" },
-          "100%": { transform: "translateY(0px)" },
-        },
+        // hplus: {
+        //  '0%':{height:"0px"},
+        //  '100%':{height:"60px"},
+        // },
+        // hminus: {
+        //   '0%':{height:"60px"},
+        //   '100%':{height:"0px"},
+        //  },
       },
+      transitionProperty: {
+        height: 'height'
+    }
     },
   },
   plugins: [],
